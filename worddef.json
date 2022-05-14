@@ -1,0 +1,26 @@
+data = '[' +
+' {"abbr" : "dcpscase_t", "name":"dcps main table"}' +
+',{"abbr" : "caseclm_t", "name":"table that details claim"}' +
+',{"abbr" : "caseactivitylog_t", "name":"stores case changes including status"}' +
+',{"abbr" : "cssplhdg_t", "name":"associates special handling/characteristics to a case"}' +
+',{"abbr" : "organization_t", "name":"contains regions, offices, and sites"}' +
+',{"abbr" : "organizationtype_t", "name":"reference table of organization types- region, office, site"}' +
+',{"abbr" : "dcpsuser_t", "name":"reference table of users"}' +
+',{"abbr" : "userorganization_t", "name":"association of a user to an office"}' +
+',{"abbr" : "actvtcd_t", "name":"reference table of case activities"}' +
+',{"abbr" : "splhdgcd_t", "name":"reference table of special handling codes"}' +
+',{"abbr" : "ccntct_t", "name":"client contact"}' +
+',{"abbr" : "11", "name":"eleven"}' +
+',{"abbr" : "12", "name":"twelve"}' +
+',{"abbr" : "13", "name":"thirteen"}' +
+',{"abbr" : "14", "name":"fourteen"}' +
+',{"abbr" : "15", "name":"fifteen"}' +
+',{"abbr" : "16", "name":"sixteen"}' +
+',{"abbr" : "17", "name":"seventeen"}' +
+',{"abbr" : "18", "name":"eighteen"}' +
+',{"abbr" : "19", "name":"nineteen"}' +
+',{"abbr" : "20", "name":"twenty"}' +
+
+']';
+
+

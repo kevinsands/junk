@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<STYLE>
+INPUT[TYPE='RADIO'] {transform: scale(1.5);}
+TEXTAREA {font-size:10pt;}
+BUTTON {font-size:20pt;}
+LABEL {font-size:12pt;border:2px solid blue;border-radius:20px;}
+table {border-collapse:collapse;}
+.gone {display:none;}
+</STYLE>
+</HEAD>
+<BODY>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+<script type="text/javascript" src="worddef.json"></script>
+
+<script>
+//("after json");
+
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+
+function press(limit) {
+
+
+for (i=0; i<limit; i++) {
+  for (j=0; j<limit;j++) {
+    abx="abbr" + i.toString();
+    nmx="name" + j.toString();
+
+
+    if (($(abx).checked==true) && ($(nmx).checked==true)) {
+      if ( $(abx).value == $(nmx).value ) {
+$("lx" + i.toString()).style.display = "none";
+$("ly" + j.toString()).style.display = "none";
+$(abx).style.display = "none";
+$(nmx).style.display = "none";
+i=50;
+j=50;
+}
+}
+  }
+}
+}
+
+document.write("<label id=l1>ABCDEFGHIJKLMNOP<br></label>");
+
+var list = JSON.parse(data);
+var mx = Object.keys(list).length;
+
+var ab = new Array();
+var nm = new Array();
+var abval = new Array();
+var nmval = new Array();
+
+//alert("1");
+for (i=0; i<mx; i++)
+{
+  ab[i] = list[i].abbr;
+  nm[i] = list[i].name;
+}
+
+ab.sort();
+nm.sort();
+
+for (j=0; j<mx; j++)
+  for (i=0; i<mx; i++)
+    if (nm[j] == list[i].name)
+      nmval[j]=i.toString();
+
+
+for (j=0; j<mx; j++)
+  for (i=0; i<mx; i++)
+    if (ab[j] == list[i].abbr)
+      abval[j]=i.toString();
+
+
+//for (i=0; i<50; i++)
+//{
+//  document.write(abval[i] + "<br>");
+//}
+
+
+
+
+document.write("<label id=l2>LABEL2</label>");
+document.write("<TABLE id=tb1 >");
+
+for (i=0; i<mx; i++) {
+
+//k = Math.floor(Math.random()*(mx-1)) + 1;
+
+//document.write("(#" + i.toString() + ") " + "<LABEL id=prob" + i.toString() + " >" + list[i].prob + "</LABEL><BR>");
+//prb="prob" + i.toString();
+//alert($(prb));c
+//$(prb).style.background = "silver";
+
+document.write("<tr><td>");
+
+document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr tabindex=" + i.toString() + " id=abbr" + i.toString() + " value=a ><label for=abbr" + i.toString() + " id=lx" + i.toString() + ">" + ab[i] + "<br></label></INPUT>&nbsp;&nbsp;");
+document.write("</td><td>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name tabindex=" + i.toString() + " id=name" + i.toString() + " value=b ><label for=name" + i.toString() + " id=ly" + i.toString() + ">" + nm[i] + "<br></label></INPUT>&nbsp;&nbsp;");
+//document.write("<INPUT value =" + i.toString() + " type=radio name=name tabindex=" + i.toString() + " id=name" + i.toString() + " value=b <label id=ly" + i.toString() + ">" + nm[i] + "</label></INPUT><BR>");
+document.write("</td></tr>");
+
+//document.write("<INPUT type=hidden id=hid" + i.toString() + " width=10 maxlength=5 value='" + list[i].ans + "'><BR>");
+} 
+document.write("</TABLE>");
+document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
+
+//$("prob0").style.background = "cornsilk";
+//$("prob1").style.background = "yellow";
+//$("prob2").style.background = "aqua";
+
+//<br><TEXTAREA id=t3 rows=10 cols=20 readonly></TEXTAREA>
+
+//var elem = document.querySelector($("abbr3"));
+//elem.style.display = 'none';
+//alert($('abbr0').innerHTML);
+//$('abbr0').style.display = "none";
+
+$("l1").style.display = "none";
+$("l2").style.display = "none";
+
+//$("lx0").style.display = "none";
+//$("ly0").style.display = "none";
+//$("abbr0").style.display = "none";
+//$("name0").style.display = "none";
+
+//$("lx4").style.display = "none";
+//$("ly4").style.display = "none";
+//$("abbr4").style.display = "none";
+//$("name4").style.display = "none";
+
+
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+
+//If you want to remove the element from the DOM entirely, you can use the removeChild() method.
+
+//$('abbr0').parentNode.removeChild($('abbr0'));
+//$('abbr0').remove();
+
+</script>
+
+`
+</BODY>
+
+</HTML>
