@@ -47,14 +47,14 @@ for (i=0; i<10; i++) {
 
 k = Math.floor(Math.random()*(mx-1)) + 1;
 
-document.write("Problem: <INPUT readonly type=text width=10 maxlength=5 id=prob" + i.toString() + " value='" + list[k].prob + "'><BR>");
+document.write("Problem: <INPUT readonly type=text size=5 maxlength=5 id=prob" + i.toString() + " value='" + list[k].prob + "'><BR>");
 prb="prob" + i.toString();
 //alert($(prb));c
 $(prb).style.background = "silver";
 
-document.write("Answer: <INPUT type=text tabindex=" + i.toString() + " id=ans" + i.toString() + " width=5 maxlength=5><BR>");
+document.write("Answer: <INPUT type=text tabindex=" + i.toString() + " id=ans" + i.toString() + " size=5 maxlength=5><BR>");
 
-document.write("<INPUT type=hidden id=hid" + i.toString() + " width=10 maxlength=5 value='" + list[k].ans + "'><BR><br>");
+document.write("<INPUT type=hidden id=hid" + i.toString() + " size=5 maxlength=5 value='" + list[k].ans + "'><BR><br>");
 } 
 
 $("ans0").focus();
