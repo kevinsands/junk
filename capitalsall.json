@@ -2,16 +2,16 @@ data = '[' +
 ' {"abbr" : "Maryland",       "name":"Annapolis"}' +
 ',{"abbr" : "Maine",          "name":"Augusta"}' +
 ',{"abbr" : "Oregon",         "name":"Salem"}' +
-',{"abbr" : "Washington",     "name":"Spokane"}' +
+',{"abbr" : "Washington",     "name":"Olympia"}' +
 ',{"abbr" : "Rhode Island",   "name":"Providence"}' +
 ',{"abbr" : "New Jersey",     "name":"Trenton"}' +
 ',{"abbr" : "New York",       "name":"Albany"}' +
 ',{"abbr" : "Pennsylvania",   "name":"Harrisburg"}' +
 ',{"abbr" : "South Carolina", "name":"Columbia"}' +
-',{"abbr" : "Texas",          "name":"Dallas"}' +
+',{"abbr" : "Texas",          "name":"Austin"}' +
 ',{"abbr" : "California",     "name":"Sacramento"}' +
 ',{"abbr" : "Nevada",         "name":"Carson City"}' +
-',{"abbr" : "Michigan",          "name":"Grand Rapids"}' +
+',{"abbr" : "Michigan",          "name":"Landsing"}' +
 ',{"abbr" : "Montana",         "name":"Helena"}' +
 ',{"abbr" : "Missouri",     "name":"Kansas City"}' +
 ',{"abbr" : "North Carolina",   "name":"Raleigh"}' +
@@ -29,13 +29,13 @@ data = '[' +
 ',{"abbr" : "Utah",     "name":"Salt Lake City"}' +
 ',{"abbr" : "Iowa",       "name":"Des Moines"}' +
 ',{"abbr" : "Ohio",   "name":"Columbus"}' +
-',{"abbr" : "Mississippi", "name":"Biloxi"}' +
+',{"abbr" : "Mississippi", "name":"Jackson"}' +
 ',{"abbr" : "Alabama",          "name":"Montgomery"}' +
 ',{"abbr" : "Alaska",     "name":"Juneau"}' +
 ',{"abbr" : "Hawaii",         "name":"Honolulu"}' +
 ',{"abbr" : "Kansas",          "name":"Topeka"}' +
 ',{"abbr" : "Colorado",   "name":"Denver"}' +
-',{"abbr" : "West Virginia", "name":"Columbia"}' +
+',{"abbr" : "West Virginia", "name":"Charleston"}' +
 ',{"abbr" : "Virginia",          "name":"Richmond"}' +
 ',{"abbr" : "Wyoming",     "name":"Cheyenne"}' +
 ',{"abbr" : "Idaho",         "name":"Boise"}' +
