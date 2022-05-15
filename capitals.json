@@ -1,0 +1,14 @@
+data = '[' +
+' {"abbr" : "Maryland", "name":"Annapolis"}' +
+',{"abbr" : "Maine", "name":"Augusta"}' +
+',{"abbr" : "Oregon", "name":"Salem"}' +
+',{"abbr" : "Washington", "name":"Spokane"}' +
+',{"abbr" : "Rhode Island", "name":"Providence"}' +
+',{"abbr" : "New Jersey", "name":"Trenton"}' +
+',{"abbr" : "New York", "name":"Albany"}' +
+',{"abbr" : "Pennsylvania", "Harrisburg"}' +
+',{"abbr" : "South Carolina", "Columbia"}' +
+
+']';
+
+
