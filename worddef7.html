@@ -3,7 +3,7 @@
 <STYLE>
 INPUT[TYPE='RADIO'] {transform: scale(1.5);}
 TEXTAREA {font-size:10pt;}
-BUTTON {font-size:12pt;}
+BUTTON {font-size:18pt;}
 LABEL {font-size:12pt;border:2px solid blue;border-radius:20px;}
 table {border-collapse:collapse;}
 .gone {display:none;}
@@ -12,13 +12,25 @@ table {border-collapse:collapse;}
 <BODY>
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
 <script type="text/javascript" src="worddef6.json"></script>
-Not Sure
+
 <script>
 //("after json");
 
 let right =0;
 let wrong = 0;
+let distinctwrong = 0;
+let wrongStr = "'None',";
 let S = "";
+//alert('1');
+let nowdatetime = new Date();
+//alert('2');
+let nowdate = nowdatetime.getFullYear()+'-'+(nowdatetime.getMonth()+1)+'-'+nowdatetime.getDate();
+//alert('3');
+let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + nowdatetime.getSeconds();
+
+//alert(nowdate);
+//alert(nowtime);
+
 var $ = function(id) {
   return document.getElementById(id);
 
@@ -63,9 +75,16 @@ $(nmx).checked=false;
        else {
 wrong = wrong + 1;
 
+//alert("wrongStr = " + wrongStr);
+
 // alert("wrong is " + $(lx).innerHTML);
-if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
-{S = S + "<br>" + $(lx).innerHTML + "<br>";}
+//if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
+if (wrongStr.indexOf("'" + $(lx).innerHTML + "'")== -1)
+{
+  distinctwrong = distinctwrong + 1;
+  S = S + "<br>" + distinctwrong.toString() + ". " + $(lx).innerHTML + "<br>";
+  wrongStr = wrongStr + "'" + $(lx).innerHTML + "',";
+}
 $(abx).checked=false;
 $(nmx).checked=false;
 $(abx).style.background="white";
@@ -74,7 +93,24 @@ $(nmx).style.background="white";
     }
   }
 }
-if (right==mx) document.write("You should practice the following:<br>" + S);
+if ((S!="") && (right==mx)) {
+document.write("You should practice capitals for:<br>" + S);
+let thendatetime = new Date();
+let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
+let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
+let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+document.write("<br>Time: " + dif + " seconds");
+
+}
+else if ((S=="") && (right==mx)) {
+let thendatetime = new Date();
+let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
+let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
+let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+//alert ("time = " + dif.toString());
+document.write("You got all of them correct in<br> " + dif + " seconds !");
+
+}
 }
 
 
@@ -108,7 +144,7 @@ for (j=0; j<mx; j++)
       abval[j]=i.toString();
 
 
-document.write("<TABLE id=tb1 >");
+document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
 
 for (i=0; i<mx; i++) {
 
@@ -155,7 +191,7 @@ document.write("</TABLE>");
 
 </script>
 
-
+`
 </BODY>
 
 </HTML>
