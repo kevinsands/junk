@@ -6,8 +6,8 @@ data = '[' +
 ',{"abbr" : "Rhode Island", "name":"Providence"}' +
 ',{"abbr" : "New Jersey", "name":"Trenton"}' +
 ',{"abbr" : "New York", "name":"Albany"}' +
-',{"abbr" : "Pennsylvania", "Harrisburg"}' +
-',{"abbr" : "South Carolina", "Columbia"}' +
+',{"abbr" : "Pennsylvania", "name":"Harrisburg"}' +
+',{"abbr" : "South Carolina", "name":"Columbia"}' +
 
 ']';
 
