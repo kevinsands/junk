@@ -23,8 +23,11 @@ let wrongStr = "'None',";
 let S = "";
 
 let nowdatetime = new Date();
-let nowdate = nowdatetime.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-let nowtime = nowdatetime.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+let nowdate = nowdatetime.getFullYear()+'-'+(nowdatetime.getMonth()+1)+'-'+nowdatetime.getDate();
+let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + nowdatetime.getSeconds();
+
+alert(nowdate);
+alert(nowtime);
 
 var $ = function(id) {
   return document.getElementById(id);
@@ -92,8 +95,8 @@ if ((S!="") && (right==mx)) document.write("You should practice the following:<b
 else if ((S=="") && (right==mx)) {
 document.write("You got all of them correct!");
 let thendatetime = new Date();
-let thendate = thendatetime.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-let thentime = thendatetime.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
+let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
 
 let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
 alert ("time = " + dif.toString());
