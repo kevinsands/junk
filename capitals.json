@@ -10,6 +10,7 @@ data = '[' +
 ',{"abbr" : "South Carolina", "name":"Columbia"}' +
 ',{"abbr" : "Texas",          "name":"Dallas"}' +
 ',{"abbr" : "California",     "name":"Sacramento"}' +
+',{"abbr" : "Nevada",         "name":"Carson City"}' +
 
 ']';
 
