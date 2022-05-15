@@ -63,9 +63,14 @@ $(nmx).checked=false;
        else {
 wrong = wrong + 1;
 
+
 // alert("wrong is " + $(lx).innerHTML);
-if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
-{S = S + "<br>" + wrong.toString() + ". " + $(lx).innerHTML + "<br>";}
+//if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
+if (wrongStr.indexOf("'" + wrong.toString() + "'")== -1)
+{
+  S = S + "<br>" + wrong.toString() + ". " + $(lx).innerHTML + "<br>";
+  wrongStr = wrongStr + "'" + wrong.toString() + "'";
+}
 $(abx).checked=false;
 $(nmx).checked=false;
 $(abx).style.background="white";
