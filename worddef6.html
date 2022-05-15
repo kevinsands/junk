@@ -65,7 +65,7 @@ wrong = wrong + 1;
 
 // alert("wrong is " + $(lx).innerHTML);
 if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
-{S = S + "<br>" + $(lx).innerHTML + "<br>";}
+{S = S + "<br>" + wrong.toString() + ". " + $(lx).innerHTML + "<br>";}
 $(abx).checked=false;
 $(nmx).checked=false;
 $(abx).style.background="white";
