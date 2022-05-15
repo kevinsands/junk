@@ -18,7 +18,7 @@ table {border-collapse:collapse;}
 
 let right =0;
 let wrong = 0;
-let wrongStr = "";
+let wrongStr = "'None',";
 let S = "";
 var $ = function(id) {
   return document.getElementById(id);
@@ -64,13 +64,14 @@ $(nmx).checked=false;
        else {
 wrong = wrong + 1;
 
+alert("wrongStr = " + wrongStr);
 
 // alert("wrong is " + $(lx).innerHTML);
 //if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
-if (wrongStr.indexOf("'" + wrong.toString() + "'")== -1)
+if (wrongStr.indexOf("'" + $(lx).innerHTML + "'")== -1)
 {
   S = S + "<br>" + wrong.toString() + ". " + $(lx).innerHTML + "<br>";
-  wrongStr = wrongStr + "'" + wrong.toString() + "'";
+  wrongStr = wrongStr + "'" + $(lx).innerHTML + "',";
 }
 $(abx).checked=false;
 $(nmx).checked=false;
