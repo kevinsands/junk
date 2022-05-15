@@ -11,6 +11,7 @@ BUTTON {font-size:20pt;}
 <BODY>
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
 <script type="text/javascript" src="add1.json"></script>
+This page select 10 random addition problems<br>
 
 <script>
 var $ = function(id) {
@@ -41,8 +42,6 @@ var mx = Object.keys(list).length;
 
 //alert("here");
 
-document.write("<BUTTON  id=btn1 onclick='press();'>Go</button><br>");
-
 
 for (i=0; i<10; i++) {
 
@@ -53,7 +52,7 @@ prb="prob" + i.toString();
 //alert($(prb));c
 $(prb).style.background = "silver";
 
-document.write("Answer: <INPUT type=text tabindex=" + i.toString() + " id=ans" + i.toString() + " width=10 maxlength=5><BR>");
+document.write("Answer: <INPUT type=text tabindex=" + i.toString() + " id=ans" + i.toString() + " width=5 maxlength=5><BR>");
 
 document.write("<INPUT type=hidden id=hid" + i.toString() + " width=10 maxlength=5 value='" + list[k].ans + "'><BR><br>");
 } 
@@ -61,6 +60,8 @@ document.write("<INPUT type=hidden id=hid" + i.toString() + " width=10 maxlength
 $("ans0").focus();
 
 //<br><TEXTAREA id=t3 rows=10 cols=20 readonly></TEXTAREA>
+
+document.write("<BUTTON  id=btn1 onclick='press();'>Go</button><br>");
 
 </script>
 
