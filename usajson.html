@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<STYLE>
+INPUT[TYPE='RADIO'] {transform: scale(1.5);}
+TEXTAREA {font-size:10pt;}
+BUTTON {font-size:20pt;}
+SELECT {font-size:20pt;}
+LABEL {font-size:20pt;border:2px solid blue;border-radius:20px;}
+table {border-collapse:collapse;}
+.gone {display:none;}
+</STYLE>
+</HEAD>
+<BODY>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+<script type="text/javascript" src="usajson.json"></script>
+
+<script>
+//("after json");
+
+document.write("<DIV style='LEFT: 0px; POSITION: absolute; TOP: 0px'>");
+document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
+
+document.write("<DIV style='LEFT: 310px; POSITION: absolute; TOP: 305px'>");
+document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';">A</LABEL></B> </DIV>");
+
+let right =0;
+let wrong = 0;
+let distinctwrong = 0;
+let wrongStr = "'None',";
+let S = "";
+//alert('1');
+let nowdatetime = new Date();
+//alert('2');
+let nowdate = nowdatetime.getFullYear()+'-'+(nowdatetime.getMonth()+1)+'-'+nowdatetime.getDate();
+//alert('3');
+let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + nowdatetime.getSeconds();
+
+//alert(nowdate);
+//alert(nowtime);
+
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+function nothing() {}
+
+function press(limit) {
+
+for (i=0; i<limit; i++)
+{
+$("lx" + i.toString()).style.background="white";
+$("ly" + i.toString()).style.background="white";
+
+}
+
+for (j=0; j<limit; j++)
+{
+
+if ($("abbr" + j.toString()).checked == true) $("lx" + j.toString()).style.background="yellow";
+if ($("name" + j.toString()).checked == true) $("ly" + j.toString()).style.background="yellow";
+
+}
+for (i=0; i<limit; i++) {
+  for (j=0; j<limit;j++) {
+    abx="abbr" + i.toString();
+    nmx="name" + j.toString();
+    lx="lx" + i.toString();
+
+
+    if (($(abx).checked==true) && ($(nmx).checked==true)) {
+      if ( $(abx).value == $(nmx).value ) {
+         $("lx" + i.toString()).style.display = "none";
+         $("ly" + j.toString()).style.display = "none";
+         $(abx).style.display = "none";
+         $(nmx).style.display = "none";     
+          i=limit;
+          j=limit;
+          right = right + 1;
+$(abx).checked=false;
+$(nmx).checked=false;
+       }
+       else {
+wrong = wrong + 1;
+
+//alert("wrongStr = " + wrongStr);
+
+// alert("wrong is " + $(lx).innerHTML);
+//if (S.indexOf("<br>" + $(lx).innerHTML + "<br>")== -1)
+if (wrongStr.indexOf("'" + $(lx).innerHTML + "'")== -1)
+{
+  distinctwrong = distinctwrong + 1;
+  S = S + "<br>" + distinctwrong.toString() + ". " + $(lx).innerHTML + "<br>";
+  wrongStr = wrongStr + "'" + $(lx).innerHTML + "',";
+}
+$(abx).checked=false;
+$(nmx).checked=false;
+$(abx).style.background="white";
+$(nmx).style.background="white";
+}
+    }
+  }
+}
+if ((S!="") && (right==mx)) {
+document.write("You should practice percentage equivalent for:<br>" + S);
+let thendatetime = new Date();
+let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
+let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
+let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+document.write("<br>Time: " + dif + " seconds");
+
+}
+else if ((S=="") && (right==mx)) {
+let thendatetime = new Date();
+let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
+let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
+let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+//alert ("time = " + dif.toString());
+document.write("You got all of them correct in<br> " + dif + " seconds !");
+
+}
+}
+
+
+var list = JSON.parse(data);
+let mx = Object.keys(list).length;
+
+var ab = new Array();
+var nm = new Array();
+var abval = new Array();
+var nmval = new Array();
+
+//alert("1");
+for (i=0; i<mx; i++)
+{
+//  ab[i] = list[i].abbr;
+  nm[i] = list[i].name;
+}
+
+//ab.sort();
+nm.sort();
+
+for (j=0; j<mx; j++)
+  for (i=0; i<mx; i++)
+    if (nm[j] == list[i].name)
+      nmval[j]=i.toString();
+
+
+//for (j=0; j<mx; j++)
+//  for (i=0; i<mx; i++)
+//    if (ab[j] == list[i].abbr)
+//      abval[j]=i.toString();
+
+
+document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
+
+for (i=0; i<mx; i++) {
+
+
+document.write("<tr><td>");
+zz= "abbr" + i.toString();
+document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+document.write("</td><td>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
+document.write("</td></tr>");
+
+} 
+document.write("</TABLE>");
+//document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
+
+//$("prob0").style.background = "cornsilk";
+//$("prob1").style.background = "yellow";
+//$("prob2").style.background = "aqua";
+
+//<br><TEXTAREA id=t3 rows=10 cols=20 readonly></TEXTAREA>
+
+//var elem = document.querySelector($("abbr3"));
+//elem.style.display = 'none';
+//alert($('abbr0').innerHTML);
+//$('abbr0').style.display = "none";
+
+
+//$("lx0").style.display = "none";
+//$("ly0").style.display = "none";
+//$("abbr0").style.display = "none";
+//$("name0").style.display = "none";
+
+//$("lx4").style.display = "none";
+//$("ly4").style.display = "none";
+//$("abbr4").style.display = "none";
+//$("name4").style.display = "none";
+
+
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+
+
+</script>
+
+`
+</BODY>
+
+</HTML>
