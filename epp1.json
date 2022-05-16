@@ -1,0 +1,25 @@
+data = '[' +
+ '{"prob" : "What are the types of glandular systems in the body", "a":"Exocrine and Adrenal","b":"Parathyroid and Endocrine","c":"Tyroid and Adrenal","d":"Endocrine and Exocrine","ans" : "d"}' +
+',{"prob" : "What is primarily used to measure brain activity", "a":"WISC","b":"Stanford Binet","c":"MRI","d":"WAIS","ans" : "c"}' +
+',{"prob" : "Erik Erikson is known for his theory of", "a":"psychology development","b":"attachment","c":"classical conditioning","d":"psychoanalytic development","ans" : "a"}' +
+',{"prob" : "According to developmental psychologists, which of the following is one of the three major types of influence on development", "a":"Longitudnal indicators","b":"Non-normative life events","c":"Nature-nurture conflicts","d":"Cross-sectional variables","ans" : "b"}' +
+',{"prob" : "As related to aging, disengagement theory states that", "a":"withdrawl from life leads to happiness","b":"happiness comes from over-involvement in life","c":"the level of social engagement has not effect upon life satisfaction","d":"high levels of social engagement ensure life satisfaction","ans" : "a"}' +
+',{"prob" : "Which would be a behavioral therapist", "a":"Carl Jung","b":"Alfred Adler","c":"B.F. Skinner","d":"Carl Rogers","ans" : "c"}' +
+',{"prob" : "What does traditional psychotherapy focus on", "a":"behavior","b":"Thoughts and feelings","c":"Physiological processes","d":"Social relationships","ans" : "b"}' +
+',{"prob" : "What is the TAT", "a":"Thematic attitude test","b":"Thematic apperception test","c":"Thematic aptitude test","d":"Theme acting test","ans" : "b"}' +
+',{"prob" : "What is the most used measure of variability in scholarly writing", "a":"Standard deviation","b":"Variance","c":"Range","d":"Normal Distribution","ans" : "a"}' +
+',{"prob" : "When the mean, median, and mode fall in different places in a distribution, it is said to be", "a":"scatterplot", "b":"skewed", "c":"normal", "d":"correlated","ans" : "b"}' +
+',{"prob" : "The basic structure of a neuron is composed of:", "a":"Refractory cells, axon, and cell body","b":"Synapse, axon, and neurotransmitters","c":"Cell body, axon, and dendrites","d":"Depolarization, soma, and neurotransmitters","ans" : "c"}' +
+',{"prob" : "What is Karen Horney known for?", "a":"Psychoanalytic theory","b":"Behavioral psychology","c":"Cultural psychology","d":"Cognitive/behavioral theory","ans" : "c"}' +
+',{"prob" : "Which is one of Karen Horney’s three coping strategies?", "a":"Moving around people","b":"Sublimation","c":"Rationalization","d":"Moving against people","ans" : "d"}' +
+',{"prob" : "What does opponent-process theory explain?", "a":"A conflict resolution process","b":"The afterimages seen after a flash of bright light","c":"A self-imposed organizational structure","d":"An auditory process","ans" : "b"}' +
+',{"prob" : "You are having a conversation with a friend.  What type of memory are you primarily making use of during the conversation?", "a":"Sensory memory","b":"Long-term memory","c":"Short-term memory","d":"Non-conscious memory","ans" : "c"}' +
+',{"prob" : "Preconventional Morality is most often seen in…", "a":"infants","b":"the elderly","c":"adults","d":"children","ans" : "d"}' +
+',{"prob" : "The idea that behavior is highly influenced by situational factors would most likely be attributed to which of the theories below?", "a":"Behavioral theory","b":"Transcendental theory","c":"Psychoanalytic theory","d":"Cognitive theory","ans" : "a"}' +
+',{"prob" : "Object permanence takes place in which of Piaget’s stages of cognitive development", "a":"Preoperational","b":"Concrete operations","c":"Sensorimotor","d":"Formal operations","ans" : "c"}' +
+',{"prob" : "What does it mean when we say that the brain has plasticity", "a":"Some of its basic components are similar to polymers","b":"It can be altered","c":"It cannot be altered","d":"It has a consistency that resists complex cellular divisions","ans" : "b"}' +
+',{"prob" : "What are the three major layers of the brain", "a":"Hindbrain, midbrain, and forebrain","b":"Corpus callosum, temporal lobe, and frontal lobe","c":"Midbrain, highbrain, and forebrain","d":"Basil ganglia, cerebellum, and parietal","ans" : "a"}' +
+',{"prob" : "Piagets sensorimotor stage takes place from", "a":"birth to two years of age","b":"two to four years of age","c":"seven to twelve years of age","d":"three to six years of age","ans" : "a"}' +
+',{"prob" : "The absolute sensory threshold is", "a":"a term to indicate the absolute intensity of sensory tolerance","b":"the lowest intensity at which a stimulus can be perceived","c":"the point at which stimuli comes into conscious awareness","d":"the highest intensity at which a stimulus can be perceived","ans" : "b"}' +
+
+']';
