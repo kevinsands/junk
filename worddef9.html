@@ -49,10 +49,20 @@ $("ly" + i.toString()).style.background="white";
 for (j=0; j<limit; j++)
 {
 
-if ($("abbr" + j.toString()).checked == true) $("lx" + j.toString()).style.background="yellow";
-if ($("name" + j.toString()).checked == true) $("ly" + j.toString()).style.background="yellow";
-
+  if ($("abbr" + j.toString()).checked == true) {
+    $("lx" + j.toString()).style.background="yellow";
+    j=limit;
+  }
 }
+for (j=0; j<limit; j++)
+{
+
+  if ($("name" + j.toString()).checked == true) {
+    $("ly" + j.toString()).style.background="yellow";
+    j=limit;
+  }
+}
+
 for (i=0; i<limit; i++) {
   for (j=0; j<limit;j++) {
     abx="abbr" + i.toString();
