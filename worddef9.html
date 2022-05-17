@@ -37,7 +37,7 @@ var $ = function(id) {
 }
 function nothing() {}
 
-function press(limit) {
+function press(limit,str1) {
 
 alert("here");
 
@@ -163,14 +163,14 @@ for (i=0; i<mx; i++) {
 
 document.write("<tr><td>");
 zz= "abbr" + i.toString();
-document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx,'abc') value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
 document.write("</td><td>");
-document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx,'def') value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
 document.write("</td></tr>");
 
 } 
 document.write("</TABLE>");
-//document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
+//document.write("<br><BUTTON  id=btn1 onclick='press(mx,'efg');'>Go</button><br>");
 
 //$("prob0").style.background = "cornsilk";
 //$("prob1").style.background = "yellow";
