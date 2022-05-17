@@ -48,12 +48,15 @@ $("ly" + i.toString()).style.background="white";
 
 }
 
-for (j=0; j<limit; j++)
+for (i=0; i<limit; i++)
 {
 
-  if ($("abbr" + j.toString()).checked == true) {
-    $("lx" + j.toString()).style.background="yellow";
-    j=limit;
+  if ($("abbr" + i.toString()).checked == true) {
+    $("lx" + i.toString()).style.background="yellow";
+    abx="abbr" + i.toString();
+    lx="lx" + i.toString();
+    i=limit;
+
   }
 }
 for (j=0; j<limit; j++)
@@ -61,25 +64,27 @@ for (j=0; j<limit; j++)
 
   if ($("name" + j.toString()).checked == true) {
     $("ly" + j.toString()).style.background="yellow";
+    nmx="name" + j.toString();
+    ly="ly" + j.toString();
     j=limit;
   }
 }
 
-for (i=0; i<limit; i++) {
-  for (j=0; j<limit;j++) {
-    abx="abbr" + i.toString();
-    nmx="name" + j.toString();
-    lx="lx" + i.toString();
+//for (i=0; i<limit; i++) {
+//  for (j=0; j<limit;j++) {
+//    abx="abbr" + i.toString();
+//    nmx="name" + j.toString();
+//    lx="lx" + i.toString();
 
 
     if (($(abx).checked==true) && ($(nmx).checked==true)) {
       if ( $(abx).value == $(nmx).value ) {
-         $("lx" + i.toString()).style.display = "none";
-         $("ly" + j.toString()).style.display = "none";
+         $(lx).style.display = "none";
+         $(ly).style.display = "none";
          $(abx).style.display = "none";
          $(nmx).style.display = "none";     
-          i=limit;
-          j=limit;
+//          i=limit;
+//          j=limit;
           right = right + 1;
 $(abx).checked=false;
 $(nmx).checked=false;
@@ -103,8 +108,8 @@ $(abx).style.background="white";
 $(nmx).style.background="white";
 }
     }
-  }
-}
+//  }
+//}
 if ((S!="") && (right==mx)) {
 document.write("You should practice capitals for:<br>" + S);
 let thendatetime = new Date();
@@ -127,7 +132,6 @@ document.write("You got all of them correct in<br> " + dif + " seconds !");
 
 
 var list = JSON.parse(data);
-let kk = 0;
 let mx = Object.keys(list).length;
 
 var ab = new Array();
