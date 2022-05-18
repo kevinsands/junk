@@ -19,8 +19,8 @@ table {border-collapse:collapse;}
 document.write("<DIV style='LEFT: 0px; POSITION: absolute; TOP: 0px'>");
 document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
 
-document.write("<DIV style='LEFT: 310px; POSITION: absolute; TOP: 305px'>");
-document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 20px'>");
+document.write("<B><LABEL id=lbl01 onclick=$('number').value='AA';>A</LABEL></B> </DIV>");
 
 let right =0;
 let wrong = 0;
@@ -128,17 +128,20 @@ var nm = new Array();
 var abval = new Array();
 var nmval = new Array();
 
-//alert("1");
+alert("1");
 document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
 document.write("<SELECT id=number size=10 name=number> ");
 document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+alert("2");
 
 for (i=0; i<mx; i++)
 {
   lbl[i] = list[i].lbl;
   nm[i] = list[i].name;
+alert("3");
 
 document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
+alert("3");
 }
 document.write("</oPTGROUP>");
 document.write("</select></div> ");
