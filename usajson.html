@@ -24,11 +24,9 @@ function nothing() {}
 
 document.write("<DIV style='LEFT: 0px; POSITION: absolute; TOP: 0px'>");
 document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
-alert('a');
 document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 20px'>");
 document.write("<B><LABEL id=lbl01 onclick=$('number').value='AA';>A</LABEL></B> </DIV>");
 
-alert('b');
 
 let right =0;
 let wrong = 0;
@@ -39,17 +37,16 @@ let S = "";
 let nowdatetime = new Date();
 //alert('2');
 let nowdate = nowdatetime.getFullYear()+'-'+(nowdatetime.getMonth()+1)+'-'+nowdatetime.getDate();
-alert('c');
 let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + nowdatetime.getSeconds();
 
 //alert(nowdate);
 //alert(nowtime);
 
-
-
-
+alert('a');
 var list = JSON.parse(data);
+alert('b');
 let mx = Object.keys(list).length;
+alert('c');
 
 var lbl = new Array();
 var nm = new Array();
