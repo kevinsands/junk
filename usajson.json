@@ -1,6 +1,6 @@
 data = '[' +
-' {"lbl" : "XX", "name":"Washingon", "x":"234", "y":234" }' +
-',{"lbl" : "YY", "name":"Oregon", "x":"234", "y":234" }' +
+' {"lbl" : "AA", "name":"Washingon", "x":"15", "y":15" }' +
+',{"lbl" : "BB", "name":"Oregon", "x":"30", "y":30" }' +
 
 ']';
 
