@@ -123,17 +123,37 @@ document.write("You got all of them correct in<br> " + dif + " seconds !");
 var list = JSON.parse(data);
 let mx = Object.keys(list).length;
 
-var ab = new Array();
+var lbl = new Array();
 var nm = new Array();
 var abval = new Array();
 var nmval = new Array();
 
 //alert("1");
+document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
+document.write("<SELECT id=number size=10 name=number> ");
+document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
 for (i=0; i<mx; i++)
 {
-//  ab[i] = list[i].abbr;
+  lbl[i] = list[i].lbl;
   nm[i] = list[i].name;
+
+document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
 }
+document.write("</oPTGROUP>");
+document.write("</select></div> ");
+
+document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
+document.write("<SELECT id=state size=10 name=state> ");
+document.write("<OPTGROUP LABEL=States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
+for (i=0; i<mx; i++)
+{
+document.write("<OPTION value=" + abbr[i] + ">" + name[i] + "</OPTION>");
+}
+
+document.write("</SELECT></div>");
+
 
 //ab.sort();
 nm.sort();
