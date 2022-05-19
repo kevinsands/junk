@@ -1,5 +1,5 @@
 data = '[' +
-' {"lbl":"A", "name":"Maine", "x":"465", "y":"45" }' +
+' {"lbl":"A", "name":"Maine", "x":"585", "y":"85" }' +
 ',{"lbl":"B", "name":"Vermont", "x":"452", "y":"67" }' +
 ',{"lbl":"C", "name":"New Hampshire", "x":"440", "y":"67" }' +
 ',{"lbl":"D", "name":"", "x":"450", "y":"85" }' +
