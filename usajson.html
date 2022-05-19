@@ -24,7 +24,7 @@ function nothing() {}
 
 document.write("<DIV style='LEFT: 0px; POSITION: absolute; TOP: 0px'>");
 document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
-document.write("<DIV style='LEFT: 465px; POSITION: absolute; TOP:45 px'>");
+document.write("<DIV style='LEFT: 565px; POSITION: absolute; TOP:65 px'>");
 document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
 
 
@@ -46,7 +46,7 @@ let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + no
 var list = JSON.parse(data);
 //alert('b');
 let mx = Object.keys(list).length;
-//alert('c');
+alert(mx.toString());
 
 var lbl = new Array();
 var nm = new Array();
