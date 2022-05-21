@@ -265,28 +265,28 @@ document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 alert ('after json');
 
 //for (i=0; i<mx; i++)
-for (i=0; i<1; i++)
-{
-  x[i] = list[i].x;
-  y[i] = list[i].y;
-  lbl[i] = list[i].lbl;
-  nm[i] = list[i].name;
+//for (i=0; i<1; i++)
+//{
+//  x[i] = list[i].x;
+//  y[i] = list[i].y;
+//  lbl[i] = list[i].lbl;
+//  nm[i] = list[i].name;
 
-  document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
-alert('before div');
-document.write("<DIV style='LEFT: + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
-alert('before label');
-document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
-alert('after label');
-}
+//  document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
+//alert('before div');
+//document.write("<DIV style='LEFT: + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
+//alert('before label');
+//document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
+//alert('after label');
+//}
 
-for (i=0; i<mx; i++)
-{
+//for (i=0; i<mx; i++)
+//{
 
-  document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
-}
-document.write("</oPTGROUP>");
-document.write("</select></div> ");
+//  document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
+//}
+//document.write("</oPTGROUP>");
+//document.write("</select></div> ");
 
 //
 document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
@@ -295,8 +295,8 @@ document.write("<OPTGROUP LABEL=Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 for (i=0; i<mx; i++)
 {
-//  lbl[i] = list[i].lbl;
-//  nm[i] = list[i].name;
+  lbl[i] = list[i].lbl;
+  nm[i] = list[i].name;
 
   document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
 }
