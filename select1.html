@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h3>A demonstration of how to access a SELECT element</h3>
+
+<select id="s1" size="4">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select>
+
+<p>
+
+<button onclick="myFunction()">Element Count</button>
+</p>
+
+<p id="demo"></p>
+
+<script>
+function elementCount() {
+  var x = document.getElementById("s1").length;
+  document.getElementById("demo").innerHTML = "element count is " + x;
+}
+</script>
