@@ -14,11 +14,17 @@
 
 <button onclick="elementCount()">Element Count</button>
 <button onclick="elementRemove()">Element Remove</button>
+<button onclick="elementChange()">Element Change</button>
 </p>
 
 <p id="demo"></p>
 
 <script>
+function elementChange() {
+  alert('in elementChange');
+  document.getElementById("s1").value = "Orange";
+}
+
 function elementCount() {
   alert('in elementCount');
   var x = document.getElementById("s1").length;
