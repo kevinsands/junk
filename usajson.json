@@ -2,29 +2,29 @@ data = '[' +
 ' {"lbl":"A", "name":"Maine", "x":"585", "y":"85" }' +
 ',{"lbl":"B", "name":"Vermont", "x":"452", "y":"67" }' +
 ',{"lbl":"C", "name":"New Hampshire", "x":"440", "y":"67" }' +
-',{"lbl":"D", "name":"", "x":"450", "y":"85" }' +
-',{"lbl":"E", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"F", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"G", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"H", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"I", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"J", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"K", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"L", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"M", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"N", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"O", "name":"", "x":"30", "y":"30" }' +
+',{"lbl":"D", "name":"Massachussetts", "x":"450", "y":"85" }' +
+',{"lbl":"E", "name":"New York", "x":"30", "y":"30" }' +
+',{"lbl":"F", "name":"Rhode Island", "x":"30", "y":"30" }' +
+',{"lbl":"G", "name":"Connecticut", "x":"30", "y":"30" }' +
+',{"lbl":"H", "name":"Pennsylvania", "x":"30", "y":"30" }' +
+',{"lbl":"I", "name":"New Jersey", "x":"30", "y":"30" }' +
+',{"lbl":"J", "name":"Delaware", "x":"30", "y":"30" }' +
+',{"lbl":"K", "name":"Maryland", "x":"30", "y":"30" }' +
+',{"lbl":"L", "name":"Virginia", "x":"30", "y":"30" }' +
+',{"lbl":"M", "name":"North Carolina", "x":"30", "y":"30" }' +
+',{"lbl":"N", "name":"South Carolina", "x":"30", "y":"30" }' +
+',{"lbl":"O", "name":"Atlanta", "x":"30", "y":"30" }' +
 ',{"lbl":"P", "name":"Florida", "x":"30", "y":"30" }' +
-',{"lbl":"Q", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"R", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"S", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"T", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"U", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"V", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"W", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"X", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"Y", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"Z", "name":"", "x":"30", "y":"30" }' +
+',{"lbl":"Q", "name":"Indiana", "x":"30", "y":"30" }' +
+',{"lbl":"R", "name":"Ohio", "x":"30", "y":"30" }' +
+',{"lbl":"S", "name":"West Virginia", "x":"30", "y":"30" }' +
+',{"lbl":"T", "name":"Kentucky", "x":"30", "y":"30" }' +
+',{"lbl":"U", "name":"Tennessee", "x":"30", "y":"30" }' +
+',{"lbl":"V", "name":"Alabama", "x":"30", "y":"30" }' +
+',{"lbl":"W", "name":"Wisconsin", "x":"30", "y":"30" }' +
+',{"lbl":"X", "name":"Michigan", "x":"30", "y":"30" }' +
+',{"lbl":"Y", "name":"Illinois", "x":"30", "y":"30" }' +
+',{"lbl":"Z", "name":"Mississippi", "x":"30", "y":"30" }' +
 ',{"lbl":"AA", "name":"", "x":"30", "y":"30" }' +
 ',{"lbl":"BB", "name":"", "x":"30", "y":"30" }' +
 ',{"lbl":"CC", "name":"", "x":"30", "y":"30" }' +
