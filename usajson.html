@@ -83,28 +83,30 @@ alert("in function");
 
       var si = $('state').selectedIndex;
       $('state').options.remove(si);
-//      $('state').options.length = count;
-alert("state box now has " + $('state').length.toString());
+
       selIndex = $('number').selectedIndex;
 
-      $('number').options.remove([$('number').selectedIndex]);
-      $('number').options.length = count;
+      var si = $('number').selectedIndex;
+      $('number').options.remove(si);
+
+//      $('number').options.remove([$('number').selectedIndex]);
+//      $('number').options.length = count;
 
 
      // $('state').value = "";
       //$('number').value = "";
 
-      $('state').selectedIndex = 0;
+//      $('state').selectedIndex = 0;
 
-      $('state').selectedIndex = count;
+//      $('state').selectedIndex = count;
 
-      $('state').selectedIndex = -1;
+//      $('state').selectedIndex = -1;
 
-      $('number').selectedIndex = 0;
+ //     $('number').selectedIndex = 0;
 
-      $('number').selectedIndex = count;
+//      $('number').selectedIndex = count;
  
-     $('number').selectedIndex = -1;
+ //    $('number').selectedIndex = -1;
 
     }
 
