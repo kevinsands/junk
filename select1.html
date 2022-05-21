@@ -15,7 +15,7 @@
 <button onclick="elementCount()">Element Count</button>
 <button onclick="elementRemove()">Element Remove</button>
 <button onclick="elementChange()">Element Change</button>
-<button onclick="sortl()">Sort</button>
+<button onclick="sortl('s1')">Sort</button>
 </p>
 
 <p id="demo"></p>
@@ -42,7 +42,13 @@ function elementRemove() {
   elementCount();
 }
 
-function sortl() {
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+
+function sortl(listField) {
+alert('in function');
     var sel = $(listField);
     var selected = sel.val(); // cache selected value, before reordering
     var opts_list = sel.find('option');
