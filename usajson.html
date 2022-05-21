@@ -81,10 +81,10 @@ alert("in function");
       if ($('number').value == "WW") $('lbl49').innerText="";
       if ($('number').value == "XX") $('lbl50').innerText="";
 
-
-      $('state').options.remove([$('state').selectedIndex]);
-      $('state').options.length = count;
-
+      var si = $('state').selectedIndex;
+      $('state').options.remove(si);
+//      $('state').options.length = count;
+alert("state box now has " + $('state').length.toString());
       selIndex = $('number').selectedIndex;
 
       $('number').options.remove([$('number').selectedIndex]);
