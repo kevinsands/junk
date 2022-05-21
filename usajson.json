@@ -11,20 +11,20 @@ data = '[' +
 ',{"lbl":"J", "name":"Delaware", "x":"535", "y":"155", "lblnum":"lbl10" }' +
 ',{"lbl":"K", "name":"Maryland", "x":"545", "y":"190", "lblnum":"lbl11" }' +
 ',{"lbl":"L", "name":"Virginia", "x":"470", "y":"170", "lblnum":"lbl12" }' +
-',{"lbl":"M", "name":"North Carolina", "x":"30", "y":"30", "lblnum":"lbl13" }' +
-',{"lbl":"N", "name":"South Carolina", "x":"30", "y":"30", "lblnum":"lbl14" }' +
-',{"lbl":"O", "name":"Georgia", "x":"30", "y":"30", "lblnum":"lbl15" }' +
-',{"lbl":"P", "name":"Florida", "x":"30", "y":"30", "lblnum":"lbl16" }' +
-',{"lbl":"Q", "name":"Indiana", "x":"30", "y":"30", "lblnum":"lbl17" }' +
-',{"lbl":"R", "name":"Ohio", "x":"30", "y":"30", "lblnum":"lbl18" }' +
-',{"lbl":"S", "name":"West Virginia", "x":"30", "y":"30", "lblnum":"lbl19" }' +
-',{"lbl":"T", "name":"Kentucky", "x":"30", "y":"30", "lblnum":"lbl20" }' +
-',{"lbl":"U", "name":"Tennessee", "x":"30", "y":"30", "lblnum":"lbl21" }' +
-',{"lbl":"V", "name":"Alabama", "x":"30", "y":"30", "lblnum":"lbl22" }' +
-',{"lbl":"W", "name":"Wisconsin", "x":"30", "y":"30", "lblnum":"lbl23" }' +
-',{"lbl":"X", "name":"Michigan", "x":"30", "y":"30", "lblnum":"lbl24" }' +
-',{"lbl":"Y", "name":"Illinois", "x":"30", "y":"30", "lblnum":"lbl25" }' +
-',{"lbl":"Z", "name":"Mississippi", "x":"30", "y":"30", "lblnum":"lbl26" }' +
+',{"lbl":"M", "name":"North Carolina", "x":"465", "y":"200", "lblnum":"lbl13" }' +
+',{"lbl":"N", "name":"South Carolina", "x":"455", "y":"220", "lblnum":"lbl14" }' +
+',{"lbl":"O", "name":"Georgia", "x":"430", "y":"250", "lblnum":"lbl15" }' +
+',{"lbl":"P", "name":"Florida", "x":"455", "y":"295", "lblnum":"lbl16" }' +
+',{"lbl":"Q", "name":"Indiana", "x":"385", "y":"185", "lblnum":"lbl17" }' +
+',{"lbl":"R", "name":"Ohio", "x":"420", "y":"145", "lblnum":"lbl18" }' +
+',{"lbl":"S", "name":"West Virginia", "x":"445", "y":"165", "lblnum":"lbl19" }' +
+',{"lbl":"T", "name":"Kentucky", "x":"410", "y":"180", "lblnum":"lbl20" }' +
+',{"lbl":"U", "name":"Tennessee", "x":"390", "y":"205", "lblnum":"lbl21" }' +
+',{"lbl":"V", "name":"Alabama", "x":"390", "y":"245", "lblnum":"lbl22" }' +
+',{"lbl":"W", "name":"Wisconsin", "x":"345", "y":"95", "lblnum":"lbl23" }' +
+',{"lbl":"X", "name":"Michigan", "x":"395", "y":"105", "lblnum":"lbl24" }' +
+',{"lbl":"Y", "name":"Illinois", "x":"355", "y":"145", "lblnum":"lbl25" }' +
+',{"lbl":"Z", "name":"Mississippi", "x":"360", "y":"240", "lblnum":"lbl26" }' +
 ',{"lbl":"AA", "name":"Minnesota", "x":"30", "y":"30", "lblnum":"lbl27" }' +
 ',{"lbl":"BB", "name":"Iowa", "x":"30", "y":"30", "lblnum":"lbl28" }' +
 ',{"lbl":"CC", "name":"Missouri", "x":"30", "y":"30", "lblnum":"lbl29" }' +
