@@ -26,7 +26,7 @@ function nothing() {}
 function checkMatch() {
 
 
-alert($('number').value);
+alert("in function");
     if (($('number').value== $('state').value) && ($('state').selectedIndex!=-1) && ($('number').selectedIndex!=-1) )
     {
 
@@ -91,8 +91,8 @@ alert($('number').value);
       $('number').options.length = count;
 
 
-      $('state').value = "";
-      $('number').value = "";
+     // $('state').value = "";
+      //$('number').value = "";
 
       $('state').selectedIndex = 0;
 
@@ -266,7 +266,7 @@ document.write("</select></div> ");
 
 //
 document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
-document.write("<SELECT id=state size=10 name=state onChangeSelected=checkMatch();> ");
+document.write("<SELECT id=state size=10 name=state onChange=checkMatch();> ");
 document.write("<OPTGROUP LABEL=Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
 
 for (i=0; i<mx; i++)
@@ -279,6 +279,7 @@ for (i=0; i<mx; i++)
 document.write("</OPTGROUP>");
 document.write("</SELECT></DIV> ");
 
+alert('screen write complete');
 //
 //document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
 //document.write("<SELECT id=state size=10 name=state> ");
