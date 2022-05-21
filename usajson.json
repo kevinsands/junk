@@ -25,28 +25,28 @@ data = '[' +
 ',{"lbl":"X", "name":"Michigan", "x":"30", "y":"30" }' +
 ',{"lbl":"Y", "name":"Illinois", "x":"30", "y":"30" }' +
 ',{"lbl":"Z", "name":"Mississippi", "x":"30", "y":"30" }' +
-',{"lbl":"AA", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"BB", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"CC", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"DD", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"EE", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"FF", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"GG", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"HH", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"II", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"JJ", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"KK", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"LL", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"MM", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"NN", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"OO", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"PP", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"QQ", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"RR", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"SS", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"TT", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"UU", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"VV", "name":"", "x":"30", "y":"30" }' +
+',{"lbl":"AA", "name":"Minnesota", "x":"30", "y":"30" }' +
+',{"lbl":"BB", "name":"Iowa", "x":"30", "y":"30" }' +
+',{"lbl":"CC", "name":"Missouri", "x":"30", "y":"30" }' +
+',{"lbl":"DD", "name":"Arkansas", "x":"30", "y":"30" }' +
+',{"lbl":"EE", "name":"Louisiana", "x":"30", "y":"30" }' +
+',{"lbl":"FF", "name":"North Dakota", "x":"30", "y":"30" }' +
+',{"lbl":"GG", "name":"South Dakota", "x":"30", "y":"30" }' +
+',{"lbl":"HH", "name":"Nebraska", "x":"30", "y":"30" }' +
+',{"lbl":"II", "name":"Kansas", "x":"30", "y":"30" }' +
+',{"lbl":"JJ", "name":"Oklahoma", "x":"30", "y":"30" }' +
+',{"lbl":"KK", "name":"Texas", "x":"30", "y":"30" }' +
+',{"lbl":"LL", "name":"Montana", "x":"30", "y":"30" }' +
+',{"lbl":"MM", "name":"Wyoming", "x":"30", "y":"30" }' +
+',{"lbl":"NN", "name":"Colorado", "x":"30", "y":"30" }' +
+',{"lbl":"OO", "name":"New Mexico", "x":"30", "y":"30" }' +
+',{"lbl":"PP", "name":"Idaho", "x":"30", "y":"30" }' +
+',{"lbl":"QQ", "name":"Utah", "x":"30", "y":"30" }' +
+',{"lbl":"RR", "name":"Arizona", "x":"30", "y":"30" }' +
+',{"lbl":"SS", "name":"Washington", "x":"30", "y":"30" }' +
+',{"lbl":"TT", "name":"Oregon", "x":"30", "y":"30" }' +
+',{"lbl":"UU", "name":"California", "x":"30", "y":"30" }' +
+',{"lbl":"VV", "name":"Nevada", "x":"30", "y":"30" }' +
 ',{"lbl":"WW", "name":"", "x":"30", "y":"30" }' +
 ',{"lbl":"XX", "name":"", "x":"30", "y":"30" }' +
 ']';
