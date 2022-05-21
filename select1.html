@@ -12,7 +12,8 @@
 
 <p>
 
-<button onclick="myFunction()">Element Count</button>
+<button onclick="elementCount()">Element Count</button>
+<button onclick="elementRemove()">Element Remove</button>
 </p>
 
 <p id="demo"></p>
@@ -22,4 +23,11 @@ function elementCount() {
   var x = document.getElementById("s1").length;
   document.getElementById("demo").innerHTML = "element count is " + x;
 }
+
+function elementCount() {
+  var y = document.getElementById("s1").selectedIndex;
+  document.getElementById("s1").remove(y);
+  elementCount();
+}
+
 </script>
