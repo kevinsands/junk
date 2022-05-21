@@ -40,12 +40,12 @@ data = '[' +
 ',{"lbl":"MM", "name":"Wyoming", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"NN", "name":"Colorado", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"OO", "name":"New Mexico", "x":"30", "y":"30", "lblnum":"lbl02" }' +
-',{"lbl":"PP", "name":"Idaho", "x":"30", "y":"30" }', "lblnum":"lbl02" }' +
-',{"lbl":"QQ", "name":"Utah", "x":"30", "y":"30" }', "lblnum":"lbl02" }' +
+',{"lbl":"PP", "name":"Idaho", "x":"30", "y":"30", "lblnum":"lbl02" }' +
+',{"lbl":"QQ", "name":"Utah", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"RR", "name":"Arizona", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"SS", "name":"Washington", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"TT", "name":"Oregon", "x":"30", "y":"30", "lblnum":"lbl02" }' +
-',{"lbl":"UU", "name":"California", "x":"30", "y":"30", "lblnum":"lbl02" }' +
+',{"lbl":"UU", "name":"California", "x":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"VV", "name":"Nevada", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"WW", "name":"Hawaii", "x":"30", "y":"30", "lblnum":"lbl02" }' +
 ',{"lbl":"XX", "name":"Alaska", "x":"30", "y":"30", "lblnum":"lbl02" }' +
