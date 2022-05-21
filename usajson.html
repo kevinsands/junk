@@ -261,6 +261,7 @@ var abval = new Array();
 var nmval = new Array();
 var clickS = "";
 var styleS = "";
+var writeS = "";
 
 
 //alert ('after json');
@@ -278,16 +279,15 @@ for (i=0; i<13; i++)
 //  nm[i] = list[i].name;
 styleS = "LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + ";";
 //alert(styleS);
-document.write("<DIV style='" + styleS + "'>");
+document.write("<DIV style='" + styleS + "' >");
 
 clickS = "$('number').value='" + lbl[i] + "';";
 alert(clickS);
 
-document.write("<B><LABEL id=" + lblnum[i] + " onClick=" + clickS + " >" + lbl[i] + "</LABEL></B></DIV>");
+writeS = "<B><LABEL id=" + lblnum[i] + " onClick=" + clickS + " >" + lbl[i] + "</LABEL></B></DIV>";
 
-//document.write("<DIV style='" + styleS + "'>OOOOO</DIV>");
-//alert('before label');
-//alert('after label');
+document.write(writeS);
+
 }
 
 document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
