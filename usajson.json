@@ -15,7 +15,7 @@ data = '[' +
 ',{"lbl":"N", "name":"South Carolina", "x":"455", "y":"220", "lblnum":"lbl14" }' +
 ',{"lbl":"O", "name":"Georgia", "x":"430", "y":"250", "lblnum":"lbl15" }' +
 ',{"lbl":"P", "name":"Florida", "x":"455", "y":"295", "lblnum":"lbl16" }' +
-',{"lbl":"Q", "name":"Indiana", "x":"385", "y":"185", "lblnum":"lbl17" }' +
+',{"lbl":"Q", "name":"Indiana", "x":"385", "y":"145", "lblnum":"lbl17" }' +
 ',{"lbl":"R", "name":"Ohio", "x":"420", "y":"145", "lblnum":"lbl18" }' +
 ',{"lbl":"S", "name":"West Virginia", "x":"445", "y":"165", "lblnum":"lbl19" }' +
 ',{"lbl":"T", "name":"Kentucky", "x":"410", "y":"180", "lblnum":"lbl20" }' +
