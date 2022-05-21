@@ -83,18 +83,18 @@ alert("in function");
 
       var si = $('state').selectedIndex;
       $('state').options.remove(si);
+      $('state').value = "";
 
       selIndex = $('number').selectedIndex;
 
-      var si = $('number').selectedIndex;
-      $('number').options.remove(si);
+      var sn = $('number').selectedIndex;
+      $('number').options.remove(sn);
+      $('number').value = "";
 
 //      $('number').options.remove([$('number').selectedIndex]);
 //      $('number').options.length = count;
 
 
-     // $('state').value = "";
-      //$('number').value = "";
 
 //      $('state').selectedIndex = 0;
 
@@ -107,6 +107,8 @@ alert("in function");
 //      $('number').selectedIndex = count;
  
  //    $('number').selectedIndex = -1;
+
+alert("bottom of checkMatch");
 
     }
 
