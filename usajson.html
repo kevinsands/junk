@@ -229,6 +229,7 @@ document.write("<B><LABEL id=lbl47 onclick=$('number').value='UU';>UU</LABEL></B
 document.write("<DIV style='LEFT:90px; POSITION:absolute;TOP:135px'>");
 document.write("<B><LABEL id=lbl48 onclick=$('number').value='VV';>VV</LABEL></B> </DIV>");
 
+alert ('before json');
 let right =0;
 let wrong = 0;
 let distinctwrong = 0;
@@ -260,6 +261,8 @@ document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
 document.write("<SELECT id=number size=10 name=number> ");
 document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
 
+alert ('after json');
+
 //for (i=0; i<mx; i++)
 for (i=0; i<1; i++)
 {
@@ -269,10 +272,11 @@ for (i=0; i<1; i++)
   nm[i] = list[i].name;
 
   document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
-
+alert('before div');
 document.write("<DIV style='LEFT: + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
+alert('before label');
 document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
-
+alert('after label');
 }
 
 for (i=0; i<mx; i++)
