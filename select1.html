@@ -15,13 +15,14 @@
 <button onclick="elementCount()">Element Count</button>
 <button onclick="elementRemove()">Element Remove</button>
 <button onclick="elementChange()">Element Change</button>
+<button onclick="sortl()">Sort</button>
 </p>
 
 <p id="demo"></p>
 
 <script>
-S = "\"";
-alert(S);
+//S = "\"";
+//alert(S);
 
 function elementChange() {
   alert('in elementChange');
@@ -41,4 +42,14 @@ function elementRemove() {
   elementCount();
 }
 
+function sortl() {
+    var sel = $(listField);
+    var selected = sel.val(); // cache selected value, before reordering
+    var opts_list = sel.find('option');
+    opts_list.sort(function (a, b) {
+        return $(a).text() > $(b).text() ? 1 : -1;
+    });
+    sel.html('').append(opts_list);
+    sel.val(selected); // set cached selected value
+}
 </script>
