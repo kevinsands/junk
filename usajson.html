@@ -162,34 +162,46 @@ var nm = new Array();
 var abval = new Array();
 var nmval = new Array();
 
-//alert("1");
 document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
 document.write("<SELECT id=number size=10 name=number> ");
 document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
-//alert("2");
 
 for (i=0; i<mx; i++)
 {
   lbl[i] = list[i].lbl;
   nm[i] = list[i].name;
-//alert("3");
 
-document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
-//alert("3");
+  document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
 }
 document.write("</oPTGROUP>");
 document.write("</select></div> ");
 
+//
 document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
-document.write("<SELECT id=state size=10 name=state> ");
-document.write("<OPTGROUP LABEL=States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+document.write("<SELECT id=name size=10 name=name> ");
+document.write("<OPTGROUP LABEL=Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
 
 for (i=0; i<mx; i++)
 {
-document.write("<OPTION value=" + abbr[i] + ">" + name[i] + "</OPTION>");
-}
+  lbl[i] = list[i].lbl;
+  nm[i] = list[i].name;
 
-document.write("</SELECT></div>");
+  document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
+}
+document.write("</OPTGROUP>");
+document.write("</SELECT></DIV> ");
+
+//
+//document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
+//document.write("<SELECT id=state size=10 name=state> ");
+//document.write("<OPTGROUP LABEL=States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
+//for (i=0; i<mx; i++)
+//{
+//document.write("<OPTION value=" + abbr[i] + ">" + name[i] + "</OPTION>");
+//}
+
+//document.write("</SELECT></div>");
 
 
 //ab.sort();
@@ -207,20 +219,20 @@ for (j=0; j<mx; j++)
 //      abval[j]=i.toString();
 
 
-document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
+//document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
 
-for (i=0; i<mx; i++) {
+//for (i=0; i<mx; i++) {
 
 
-document.write("<tr><td>");
-zz= "abbr" + i.toString();
-document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
-document.write("</td><td>");
-document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
-document.write("</td></tr>");
+//document.write("<tr><td>");
+//zz= "abbr" + i.toString();
+//document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+//document.write("</td><td>");
+//document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
+//document.write("</td></tr>");
 
-} 
-document.write("</TABLE>");
+//} 
+//document.write("</TABLE>");
 //document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
 
 //$("prob0").style.background = "cornsilk";
@@ -254,7 +266,7 @@ document.write("</TABLE>");
 
 </script>
 
-`
+
 </BODY>
 
 </HTML>
