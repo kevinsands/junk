@@ -1,5 +1,5 @@
 data = '[' +
-' {"lbl":"A", "name":"Maine", "x":"585", "y":"85" }' +
+' {"lbl":"A", "name":"Maine", "x":"535", "y":"45" }' +
 ',{"lbl":"B", "name":"Vermont", "x":"452", "y":"67" }' +
 ',{"lbl":"C", "name":"New Hampshire", "x":"440", "y":"67" }' +
 ',{"lbl":"D", "name":"Massachussetts", "x":"450", "y":"85" }' +
@@ -13,7 +13,7 @@ data = '[' +
 ',{"lbl":"L", "name":"Virginia", "x":"30", "y":"30" }' +
 ',{"lbl":"M", "name":"North Carolina", "x":"30", "y":"30" }' +
 ',{"lbl":"N", "name":"South Carolina", "x":"30", "y":"30" }' +
-',{"lbl":"O", "name":"Atlanta", "x":"30", "y":"30" }' +
+',{"lbl":"O", "name":"Georgia", "x":"30", "y":"30" }' +
 ',{"lbl":"P", "name":"Florida", "x":"30", "y":"30" }' +
 ',{"lbl":"Q", "name":"Indiana", "x":"30", "y":"30" }' +
 ',{"lbl":"R", "name":"Ohio", "x":"30", "y":"30" }' +
@@ -47,6 +47,6 @@ data = '[' +
 ',{"lbl":"TT", "name":"Oregon", "x":"30", "y":"30" }' +
 ',{"lbl":"UU", "name":"California", "x":"30", "y":"30" }' +
 ',{"lbl":"VV", "name":"Nevada", "x":"30", "y":"30" }' +
-',{"lbl":"WW", "name":"", "x":"30", "y":"30" }' +
-',{"lbl":"XX", "name":"", "x":"30", "y":"30" }' +
+',{"lbl":"WW", "name":"Hawaii", "x":"30", "y":"30" }' +
+',{"lbl":"XX", "name":"Alaska", "x":"30", "y":"30" }' +
 ']';

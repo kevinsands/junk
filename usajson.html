@@ -118,8 +118,8 @@ alert('1');
 document.write("<DIV style='LEFT:0px; POSITION:absolute; TOP:0px'>");
 document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
 
-document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:45px'>");
-document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:45px'>");
+//document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
 
 document.write("<DIV style='LEFT:526px; POSITION:absolute;TOP:80px'>");
 document.write("<B><LABEL id=lbl02 onclick=$('number').value='B';>B</LABEL></B> </DIV>");
@@ -261,17 +261,17 @@ var nmval = new Array();
 
 alert ('after json');
 
-//for (i=0; i<1; i++)
 for (i=0; i<mx; i++)
+for (i=0; i<1; i++)
 {
   x[i] = list[i].x + "px";
   y[i] = list[i].y + "px";
 //  lbl[i] = list[i].lbl;
 //  nm[i] = list[i].name;
 
-document.write("<DIV style='LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>HO </DIV>");
+document.write("<DIV style='LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
 //alert('before label');
-//document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
+document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
 //alert('after label');
 }
 
