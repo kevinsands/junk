@@ -261,21 +261,19 @@ var nmval = new Array();
 
 alert ('after json');
 
-//for (i=0; i<mx; i++)
 //for (i=0; i<1; i++)
-//{
-//  x[i] = list[i].x;
-//  y[i] = list[i].y;
+for (i=0; i<mx; i++)
+{
+  x[i] = list[i].x + "px";
+  y[i] = list[i].y + "px";
 //  lbl[i] = list[i].lbl;
 //  nm[i] = list[i].name;
 
-//  document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
-//alert('before div');
-//document.write("<DIV style='LEFT: + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
+document.write("<DIV style='LEFT: + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>HORSE </DIV>");
 //alert('before label');
 //document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
 //alert('after label');
-//}
+}
 
 document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
 document.write("<SELECT id=number size=10 name=number> ");
