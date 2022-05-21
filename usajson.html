@@ -282,10 +282,10 @@ styleS = "LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + ";";
 document.write("<DIV style='" + styleS + "' >");
 
 clickS = "$('number').value='" + lbl[i] + "';";
-alert(clickS);
+//alert(clickS);
 
 writeS = "<B><LABEL id=" + lblnum[i] + " onClick=" + clickS + " >" + lbl[i] + "</LABEL></B></DIV>";
-
+alert(writeS);
 document.write(writeS);
 
 }
