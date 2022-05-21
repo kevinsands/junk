@@ -268,7 +268,7 @@ var writeS = "";
 //alert ('after json');
 
 //for (i=0; i<mx; i++)
-for (i=0; i<20; i++)
+for (i=0; i<26; i++)
 {
   x[i] = list[i].x + "px";
   y[i] = list[i].y + "px";
@@ -286,7 +286,7 @@ clickS = "\"" + "$('number').value='" + lbl[i] + "';" + "\"" ;
 //alert(clickS);
 
 writeS = "<B><LABEL id=" + lblnum[i] + " onClick=" + clickS + " >" + lbl[i] + "</LABEL></B></DIV>";
-//alert(writeS);
+alert(writeS);
 document.write(writeS);
 
 }
