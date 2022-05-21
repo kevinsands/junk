@@ -114,7 +114,7 @@ function checkMatch() {
 
   }
 
-alert('1');
+//alert('1');
 document.write("<DIV style='LEFT:0px; POSITION:absolute; TOP:0px'>");
 document.write("<IMG height=450 src='usa.gif' width=699> </DIV>");
 
@@ -230,7 +230,7 @@ document.write("<B><LABEL id=lbl47 onclick=$('number').value='UU';>UU</LABEL></B
 document.write("<DIV style='LEFT:90px; POSITION:absolute;TOP:135px'>");
 document.write("<B><LABEL id=lbl48 onclick=$('number').value='VV';>VV</LABEL></B> </DIV>");
 
-alert ('before json');
+//alert ('before json');
 let right =0;
 let wrong = 0;
 let distinctwrong = 0;
@@ -274,7 +274,9 @@ alert(y[i]);
 
 document.write("<DIV style='LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + ";'>");
 //alert('before label');
-document.write("<B><LABEL id=lbl01 onClick=$('number').value=" + lbl[i] + " >" + lbl[i] + "</LABEL></DIV></B> </DIV>");
+clickS = "$('number').value='" + lbl[i]] + "';";
+alert(clickS);
+document.write("<B><LABEL id=lbl01 onClick=" + clickS + " >" + lbl[i] + "</LABEL></DIV></B> </DIV>");
 //alert('after label');
 }
 
