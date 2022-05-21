@@ -266,12 +266,15 @@ for (i=0; i<1; i++)
 {
   x[i] = list[i].x + "px";
   y[i] = list[i].y + "px";
-//  lbl[i] = list[i].lbl;
+alert(x[i]);
+alert(y[i]);
+
+  lbl[i] = list[i].lbl;
 //  nm[i] = list[i].name;
 
-document.write("<DIV style='LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + "'>");
+document.write("<DIV style='LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + ";'>");
 //alert('before label');
-document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + "';>" + lbl[i] + "</LABEL></B> </DIV>");
+document.write("<B><LABEL id=lbl01 onclick=$('number').value='" + lbl[i] + ";>" + lbl[i] + "</LABEL></B> </DIV>");
 //alert('after label');
 }
 
