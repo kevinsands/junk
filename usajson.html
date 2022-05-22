@@ -24,6 +24,16 @@ var $ = function(id) {
 }
 function nothing() {}
 
+function playWhistle() {
+  if ($('cbx').checked)
+  $('whistle').play();
+}
+
+function playHonk() {
+  if ($('cbx').checked)
+  $('honk').play();
+}
+
 function checkMatch() {
 
 
@@ -111,9 +121,19 @@ function checkMatch() {
 
 //alert("bottom of checkMatch");
 
+          playWhistle();
+
     }
+    else     playHonk();
 
   }
+
+document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
+
+document.write("<audio id=honk><source src=honk.wav type=audio/wav></source></audio>");
+
+document.write("<input id=cbx type=checkbox name=cbx checked><label class=snd>&nbsp;Sound</label></input>");
+
 
 //alert('1');
 document.write("<DIV style='LEFT:0px; POSITION:absolute; TOP:0px'>");
