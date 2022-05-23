@@ -37,6 +37,16 @@ var $ = function(id) {
 }
 function nothing() {}
 
+function playWhistle() {
+  if ($('cbx').checked)
+  $('whistle').play();
+}
+
+function playHonk() {
+  if ($('cbx').checked)
+  $('honk').play();
+}
+
 function press(limit) {
 
 for (i=0; i<limit; i++)
@@ -143,6 +153,9 @@ for (j=0; j<mx; j++)
     if (ab[j] == list[i].abbr)
       abval[j]=i.toString();
 
+document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
+
+document.write("<audio id=honk><source src=honk.wav type=audio/wav></source></audio>");
 
 document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
 
@@ -158,6 +171,9 @@ document.write("</td></tr>");
 
 } 
 document.write("</TABLE>");
+
+document.write("<input id=cbx type=checkbox name=cbx checked><label class=snd>&nbsp;Sound</label></input></div>");
+
 //document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
 
 //$("prob0").style.background = "cornsilk";
@@ -191,7 +207,7 @@ document.write("</TABLE>");
 
 </script>
 
-`
+
 </BODY>
 
 </HTML>
