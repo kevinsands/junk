@@ -110,7 +110,7 @@ document.write("You should practice capitals for:<br>" + S);
 let thendatetime = new Date();
 let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
-let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+let dif = Math.trunc(( thendatetime.getTime() - nowdatetime.getTime() ) / 1000);
 document.write("<br>Time: " + dif + " seconds");
 
 }
