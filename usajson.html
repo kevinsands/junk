@@ -132,9 +132,10 @@ function checkMatch() {
     }
     else {
      playHonk();
-     wrongStr = wrongStr + selState ;
+     wrongStr = wrongStr + ", " + selState ;
     }
-      alert( ($('number').options.length).toString());
+//      alert( ($('number').options.length).toString());
+      alert( wrongStr);
 
   }
 
