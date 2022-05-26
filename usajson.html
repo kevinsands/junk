@@ -19,6 +19,9 @@ table {border-collapse:collapse;}
 
 //alert(String.fromCharCode(22));
 
+let selState = " ";
+let wrongStr = " ";
+
 var $ = function(id) {
   return document.getElementById(id);
 
@@ -39,6 +42,8 @@ function checkMatch() {
 
 
 //alert("in function");
+    selState = $('state').value;
+
     if (($('number').value== $('state').value) && ($('state').selectedIndex!=-1) && ($('number').selectedIndex!=-1) )
     {
 
@@ -125,7 +130,11 @@ function checkMatch() {
           playWhistle();
 
     }
-    else     playHonk();
+    else {
+     playHonk();
+     wrongStr = wrongStr + selState ;
+    }
+      alert(($('number').options.length);
 
   }
 
