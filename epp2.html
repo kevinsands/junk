@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<STYLE>
+INPUT[TYPE='RADIO'] {transform: scale(1.5);}
+TEXTAREA {font-size:20pt;}
+BUTTON {font-size:20pt;}
+LABEL {font-size:25pt;}
+LABEL.x {font-size:12pt;}
+</STYLE>
+</HEAD>
+<BODY>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+<script type="text/javascript" src="epp1.json"></script>
+
+<script>
+let wrongList = "";
+
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+
+function press(limit) {
+
+
+//  var mx = Object.keys(list).length;
+
+  for (i=0; i<limit; i++) {
+    ax = "a" + i.toString();
+    bx = "b" + i.toString();
+    cx = "c" + i.toString();
+    dx = "d" + i.toString();
+
+  hx = "hid" + i.toString();
+  px = "prob" + i.toString();
+      $(px).style.background="red";
+
+
+    if (($(ax).checked==true) && ($(hx).value == "a"))
+      $("prob" + i.toString()).style.background="aqua";
+
+    else if (($(bx).checked==true) && ($(hx).value == "b"))
+      $("prob" + i.toString()).style.background="aqua";
+
+    else if (($(cx).checked==true) && ($(hx).value == "c"))
+      $("prob" + i.toString()).style.background="aqua";
+
+    else if (($(dx).checked==true) && ($(hx).value == "d"))
+      $("prob" + i.toString()).style.background="aqua";
+    else
+      wrongList = wrongList + "," + list[i].prob
+  }
+  alert(wrongList);
+}
+
+
+let list = JSON.parse(data);
+
+let mx = Object.keys(list).length;
+
+//alert("here");
+
+
+
+for (i=0; i<mx; i++) {
+
+//k = Math.floor(Math.random()*(mx-1)) + 1;
+
+document.write("(#" + i.toString() + ") " + "<LABEL id=prob" + i.toString() + " >" + list[i].prob + "</LABEL><BR>");
+//prb="prob" + i.toString();
+//alert($(prb));c
+//$(prb).style.background = "silver";
+
+document.write("<INPUT type=radio name=prb" + i.toString() + " tabindex=" + i.toString() + " id=a" + i.toString() + " value=a >" + "<label class=x for=a" + i.toString() + ">&nbsp;&nbsp;&nbsp;" + list[i].a + "</label></INPUT><BR>");
+document.write("<INPUT type=radio name=prb" + i.toString() + " tabindex=" + i.toString() + " id=b" + i.toString() + " value=b >" + "<label class=x for=b" + i.toString() + ">&nbsp;&nbsp;&nbsp;" + list[i].b + "</label></INPUT><BR>");
+document.write("<INPUT type=radio name=prb" + i.toString() + " tabindex=" + i.toString() + " id=c" + i.toString() + " value=c >" + "<label class=x for=c" + i.toString() + ">&nbsp;&nbsp;&nbsp;" + list[i].c + "</label></INPUT><BR>");
+document.write("<INPUT type=radio name=prb" + i.toString() + " tabindex=" + i.toString() + " id=d" + i.toString() + " value=d >" + "<label class=x for=d" + i.toString() + ">&nbsp;&nbsp;&nbsp;" + list[i].d + "</label></INPUT><BR>");
+
+document.write("<INPUT type=hidden id=hid" + i.toString() + " width=10 maxlength=5 value='" + list[i].ans + "'><BR>");
+} 
+
+document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check Answers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br><br><br>");
+
+//$("prob0").style.background = "cornsilk";
+//$("prob1").style.background = "yellow";
+//$("prob2").style.background = "aqua";
+
+//<br><TEXTAREA id=t3 rows=10 cols=20 readonly></TEXTAREA>
+
+</script>
+
+
+</BODY>
+
+</HTML>
