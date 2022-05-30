@@ -48,7 +48,7 @@ function press(limit) {
     else if (($(dx).checked==true) && ($(hx).value == "d"))
       $("prob" + i.toString()).style.background="aqua";
     else
-      wrongList = wrongList + "," + list[i].prob
+      wrongList = wrongList + "," + list[i].prob + "\n";
   }
   alert(wrongList);
 }
