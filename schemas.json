@@ -1,0 +1,13 @@
+data = '[' +
+' {"abbr" : "dcpscore",       "name":"contains fundamental table like dcpscase_t"}' +
+',{"abbr" : "haltr",          "name":"contains generated documents"}' +
+',{"abbr" : "dcpsevidence",         "name":"contains case developments"}' +
+',{"abbr" : "dcpsorg",     "name":"contains office reference data"}' +
+',{"abbr" : "dcpshearing",   "name":"contains scheduling info"}' +
+',{"abbr" : "qasampreview",     "name":"contains qa reference data for screens"}' +
+',{"abbr" : "hacps_mi_exp",       "name":"contains cpms-like reporting data"}' +
+',{"abbr" : "public",   "name":"default schema in postgresql"}' +
+
+']';
+
+
