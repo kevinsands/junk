@@ -79,13 +79,15 @@ for (i=0; i<limit; i++) {
           i=limit;
           j=limit;
           right = right + 1;
-$(abx).style.background="red";
-$(nmx).style.background="red";
 $(abx).checked=false;
 $(nmx).checked=false;
 playWhistle();
        }
        else {
+         $("lx" + i.toString()).style.background = "red";
+         $("ly" + j.toString()).style.background = "red";
+         $(abx).style.background = "red";
+         $(nmx).style.background = "red";     
 wrong = wrong + 1;
 playHonk();
 
