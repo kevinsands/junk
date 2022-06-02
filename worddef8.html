@@ -84,8 +84,12 @@ $(abx).checked=false;
 $(nmx).checked=false;
        }
        else {
-wrong = wrong + 1;
-playHonk();
+         $("lx" + i.toString()).style.background = "LightCoral";
+         $("ly" + j.toString()).style.background = "LightCoral";
+         $(abx).style.background = "LightCoral";
+         $(nmx).style.background = "LightCoral";     
+         wrong = wrong + 1;
+         playHonk();
 
 //alert("wrongStr = " + wrongStr);
 
@@ -175,7 +179,7 @@ document.write("</td></tr>");
 } 
 document.write("</TABLE>");
 
-document.write("<input id=cbx type=checkbox name=cbx checked><label class=snd>&nbsp;Sound</label></input></div>");
+document.write("<input id=cbx type=checkbox name=cbx><label class=snd>&nbsp;Sound</label></input></div>");
 
 //document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
 
