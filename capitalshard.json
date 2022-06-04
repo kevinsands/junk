@@ -49,12 +49,12 @@ data = '[' +
 ',{"abbr" : "Illinois",          "name":"Springfield"}' +
 ',{"abbr" : "Minnesota",     "name":"Saint Paul"}' +
 ',{"abbr" : "Nebraska",         "name":"Lincoln"}' +
-',{"abbr" : "Mexico",         "name":"Invalid State"}' +
-',{"abbr" : "Invalid Capital",         "name":"Memphis"}' +
-',{"abbr" : "Invalid Capital",         "name":"Dallas"}' +
-',{"abbr" : "Northern California",         "name":"Invalid State"}' +
-',{"abbr" : "Canada",         "name":"Invalid State"}' +
-',{"abbr" : "Invalid Capital",         "name":"Towson"}' +
+',{"abbr" : "Invalid D Capital",         "name":"Dallas"}' +
+',{"abbr" : "Invalid M Capital",         "name":"Memphis"}' +
+',{"abbr" : "Invalid T Capital",         "name":"Towson"}' +
+',{"abbr" : "Canada",     "name":"Invalid C State"}' +
+',{"abbr" : "Mexico",     "name":"Invalid M State"}' +
+',{"abbr" : "Northern California",         "name":"Invalid N State"}' +
 
 ']';
 
