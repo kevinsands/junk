@@ -11,7 +11,7 @@ data = '[' +
 ',{"abbr" : "Texas",          "name":"Austin"}' +
 ',{"abbr" : "California",     "name":"Sacramento"}' +
 ',{"abbr" : "Nevada",         "name":"Carson City"}' +
-',{"abbr" : "Michigan",          "name":"Landsing"}' +
+',{"abbr" : "Michigan",          "name":"Lansing"}' +
 ',{"abbr" : "Montana",         "name":"Helena"}' +
 ',{"abbr" : "Missouri",     "name":"Kansas City"}' +
 ',{"abbr" : "North Carolina",   "name":"Raleigh"}' +
@@ -43,7 +43,7 @@ data = '[' +
 ',{"abbr" : "Louisiana",          "name":"Baton Rouge"}' +
 ',{"abbr" : "Indiana",     "name":"Indianapolis"}' +
 ',{"abbr" : "Kentucky",         "name":"Frankfort"}' +
-',{"abbr" : "Tennessee",          "name":"Memphis"}' +
+',{"abbr" : "Tennessee",          "name":"Nashville"}' +
 ',{"abbr" : "Arizona",   "name":"Phoenix"}' +
 ',{"abbr" : "Connecticut", "name":"Hartford"}' +
 ',{"abbr" : "Illinois",          "name":"Springfield"}' +
