@@ -11,7 +11,7 @@ table {border-collapse:collapse;}
 </HEAD>
 <BODY>
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
-<script type="text/javascript" src="realbig.json"></script>
+<script type="text/javascript" src="capitalshard.json"></script>
 
 <script>
 //("after json");
@@ -37,9 +37,17 @@ var $ = function(id) {
 }
 function nothing() {}
 
-function press(limit,str1) {
+function playWhistle() {
+  if ($('cbx').checked)
+  $('whistle').play();
+}
 
-//alert(str1);
+function playHonk() {
+  if ($('cbx').checked)
+  $('honk').play();
+}
+
+function press(limit) {
 
 for (i=0; i<limit; i++)
 {
@@ -48,49 +56,40 @@ $("ly" + i.toString()).style.background="white";
 
 }
 
-for (i=0; i<limit; i++)
-{
-
-  if ($("abbr" + i.toString()).checked == true) {
-    $("lx" + i.toString()).style.background="yellow";
-    abx="abbr" + i.toString();
-    lx="lx" + i.toString();
-    i=limit;
-
-  }
-}
 for (j=0; j<limit; j++)
 {
 
-  if ($("name" + j.toString()).checked == true) {
-    $("ly" + j.toString()).style.background="yellow";
-    nmx="name" + j.toString();
-    ly="ly" + j.toString();
-    j=limit;
-  }
-}
+if ($("abbr" + j.toString()).checked == true) $("lx" + j.toString()).style.background="yellow";
+if ($("name" + j.toString()).checked == true) $("ly" + j.toString()).style.background="yellow";
 
-//for (i=0; i<limit; i++) {
-//  for (j=0; j<limit;j++) {
-//    abx="abbr" + i.toString();
-//    nmx="name" + j.toString();
-//    lx="lx" + i.toString();
+}
+for (i=0; i<limit; i++) {
+  for (j=0; j<limit;j++) {
+    abx="abbr" + i.toString();
+    nmx="name" + j.toString();
+    lx="lx" + i.toString();
 
 
     if (($(abx).checked==true) && ($(nmx).checked==true)) {
       if ( $(abx).value == $(nmx).value ) {
-         $(lx).style.display = "none";
-         $(ly).style.display = "none";
+         $("lx" + i.toString()).style.display = "none";
+         $("ly" + j.toString()).style.display = "none";
          $(abx).style.display = "none";
          $(nmx).style.display = "none";     
-//          i=limit;
-//          j=limit;
+          i=limit;
+          j=limit;
           right = right + 1;
+playWhistle();
 $(abx).checked=false;
 $(nmx).checked=false;
        }
        else {
-wrong = wrong + 1;
+         $("lx" + i.toString()).style.background = "LightCoral";
+         $("ly" + j.toString()).style.background = "LightCoral";
+         $(abx).style.background = "LightCoral";
+         $(nmx).style.background = "LightCoral";     
+         wrong = wrong + 1;
+         playHonk();
 
 //alert("wrongStr = " + wrongStr);
 
@@ -108,14 +107,14 @@ $(abx).style.background="white";
 $(nmx).style.background="white";
 }
     }
-//  }
-//}
+  }
+}
 if ((S!="") && (right==mx)) {
 document.write("You should practice capitals for:<br>" + S);
 let thendatetime = new Date();
 let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
-let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+let dif = Math.trunc(( thendatetime.getTime() - nowdatetime.getTime() ) / 1000);
 document.write("<br>Time: " + dif + " seconds");
 
 }
@@ -123,7 +122,7 @@ else if ((S=="") && (right==mx)) {
 let thendatetime = new Date();
 let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
-let dif = ( thendatetime.getTime() - nowdatetime.getTime() ) / 1000;
+let dif = Math.trunc(( thendatetime.getTime() - nowdatetime.getTime() ) / 1000);
 //alert ("time = " + dif.toString());
 document.write("You got all of them correct in<br> " + dif + " seconds !");
 
@@ -161,21 +160,28 @@ for (j=0; j<mx; j++)
       abval[j]=i.toString();
 
 
+document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
+
+document.write("<audio id=honk><source src=CLANK.WAV type=audio/wav></source></audio>");
+
 document.write("<TABLE id=tb1 ><tr><th>State</th><th>Capital</th></tr>");
 
 for (i=0; i<mx; i++) {
 
-kk=i.toString();
+
 document.write("<tr><td>");
 zz= "abbr" + i.toString();
-document.write("<INPUT class=gone onClick=press(mx,kk) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
 document.write("</td><td>");
-document.write("<INPUT class=gone onClick=press(mx,kk) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
 document.write("</td></tr>");
 
 } 
 document.write("</TABLE>");
-//document.write("<br><BUTTON  id=btn1 onclick='press(mx,'efg');'>Go</button><br>");
+
+document.write("<input id=cbx type=checkbox name=cbx><label class=snd>&nbsp;Sound</label></input></div>");
+
+//document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
 
 //$("prob0").style.background = "cornsilk";
 //$("prob1").style.background = "yellow";
@@ -208,7 +214,7 @@ document.write("</TABLE>");
 
 </script>
 
-`
+
 </BODY>
 
 </HTML>
