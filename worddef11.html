@@ -172,6 +172,8 @@ document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source><
 
 document.write("<audio id=honk><source src=zag.wav type=audio/wav></source></audio>");
 
+document.write("<input id=cbx type=checkbox name=cbx><label class=snd>&nbsp;Sound</label></input></div>");
+document.write("<br>");
 document.write("<TABLE id=tb1 ><tr><th>Letter</th><th>Picture</th></tr>");
 
 for (i=0; i<mx; i++) {
@@ -181,13 +183,12 @@ document.write("<tr><td>");
 zz= "abbr" + i.toString();
 document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
 document.write("</td><td>");
-document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">&nbsp;<img src=" + nm[i] + ".jpg width=40 height=40></img>" + "&nbsp;<br></button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">&nbsp;<img src=" + nm[i] + ".jpg width=50 height=50></img>" + "&nbsp;<br></button></INPUT>");
 document.write("</td></tr>");
 
 } 
 document.write("</TABLE>");
 
-document.write("<input id=cbx type=checkbox name=cbx><label class=snd>&nbsp;Sound</label></input></div>");
 
 //document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
 
