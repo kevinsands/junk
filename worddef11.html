@@ -111,12 +111,12 @@ $(nmx).style.background="white";
   }
 }
 if ((S!="") && (right==mx)) {
-document.write("Great Job !<br>You should practice the following Letters:<br>" + S);
+document.write("Great Job !<br>You should practice the following<br> Letters:<br><br>" + S);
 let thendatetime = new Date();
 let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
 let dif = Math.trunc(( thendatetime.getTime() - nowdatetime.getTime() ) / 1000);
-document.write("<br>Time: " + dif + " seconds");
+document.write("<br><br>Time: " + dif + " seconds");
 
 }
 else if ((S=="") && (right==mx)) {
@@ -125,7 +125,7 @@ let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+th
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
 let dif = Math.trunc(( thendatetime.getTime() - nowdatetime.getTime() ) / 1000);
 //alert ("time = " + dif.toString());
-document.write("Excellent !!<br>You got all of them correct in<br> " + dif + " seconds !");
+document.write("Excellent !!<br><br>You got all of them correct in<br><br> " + dif + " seconds !");
 
 }
 }
