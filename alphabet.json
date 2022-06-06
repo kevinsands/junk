@@ -1,16 +1,16 @@
 data = '[' +
-' {"abbr" : "A",       "name":"Apple"}' +
-',{"abbr" : "B",          "name":"Banana"}' +
-',{"abbr" : "C",         "name":"Cat"}' +
-',{"abbr" : "D",     "name":"Dog"}' +
-',{"abbr" : "E",   "name":"Elephant"}' +
-',{"abbr" : "F",     "name":"Frog"}' +
-',{"abbr" : "G",       "name":"Giraffe"}' +
-',{"abbr" : "H",   "name":"H"}' +
-',{"abbr" : "I", "name":"Icicle"}' +
-',{"abbr" : "J",          "name":"J"}' +
-',{"abbr" : "K",     "name":"King"}' +
-',{"abbr" : "L",         "name":"Lion"}' +
+' {"abbr" : "A",       "name":"apple"}' +
+',{"abbr" : "B",          "name":"banana"}' +
+',{"abbr" : "C",         "name":"cat"}' +
+',{"abbr" : "D",     "name":"dog"}' +
+',{"abbr" : "E",   "name":"elephant"}' +
+',{"abbr" : "F",     "name":"fox"}' +
+',{"abbr" : "G",       "name":"giraffe"}' +
+',{"abbr" : "H",   "name":"horse"}' +
+',{"abbr" : "I", "name":"icicle"}' +
+',{"abbr" : "J",          "name":"jar"}' +
+',{"abbr" : "K",     "name":"king"}' +
+',{"abbr" : "L",         "name":"lion"}' +
 
 ']';
 
