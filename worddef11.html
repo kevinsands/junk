@@ -111,7 +111,7 @@ $(nmx).style.background="white";
   }
 }
 if ((S!="") && (right==mx)) {
-document.write("Great Job !<br>You should practice the following<br> Letters:<br><br>" + S);
+document.write("Great Job !<br>You should practice the following<br> Letters:<br>" + S);
 let thendatetime = new Date();
 let thendate = thendatetime.getFullYear()+'-'+(thendatetime.getMonth()+1)+'-'+thendatetime.getDate();
 let thentime = thendatetime.getHours() + ":" + thendatetime.getMinutes() + ":" + thendatetime.getSeconds();
@@ -184,7 +184,7 @@ document.write("<tr><td>");
 zz= "abbr" + i.toString();
 document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">&nbsp;" + ab[i] + "&nbsp;</button></INPUT>");
 document.write("</td><td>");
-document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">&nbsp;<img src=" + nm[i] + ".jpg width=50 height=50></img>" + "&nbsp;<br></button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">&nbsp;<img src=" + nm[i] + ".jpg width=60 height=60></img>" + "&nbsp;<br></button></INPUT>");
 document.write("</td></tr>");
 
 } 
