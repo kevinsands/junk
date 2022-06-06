@@ -135,18 +135,22 @@ let mx = Object.keys(list).length;
 
 var ab = new Array();
 var nm = new Array();
+var ord = new Array();
 var abval = new Array();
 var nmval = new Array();
+var ordval = new Array();
 
 //alert("1");
 for (i=0; i<mx; i++)
 {
   ab[i] = list[i].abbr;
   nm[i] = list[i].name;
+  ord[i] = list[i].order;
 }
 
 ab.sort();
-nm.sort();
+ord.sort();
+//nm.sort();
 
 for (j=0; j<mx; j++)
   for (i=0; i<mx; i++)
@@ -158,6 +162,11 @@ for (j=0; j<mx; j++)
   for (i=0; i<mx; i++)
     if (ab[j] == list[i].abbr)
       abval[j]=i.toString();
+
+for (j=0; j<mx; j++)
+  for (i=0; i<mx; i++)
+    if (ord[j] == list[i].order)
+      ordval[j]=i.toString();
 
 document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
 

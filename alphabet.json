@@ -1,16 +1,16 @@
 data = '[' +
-' {"abbr" : "A",       "name":"06apple"}' +
-',{"abbr" : "B",          "name":"07banana"}' +
-',{"abbr" : "C",         "name":"04cat"}' +
-',{"abbr" : "D",     "name":"10dog"}' +
-',{"abbr" : "E",   "name":"03elephant"}' +
-',{"abbr" : "F",     "name":"02fox"}' +
-',{"abbr" : "G",       "name":"01giraffe"}' +
-',{"abbr" : "H",   "name":"08horse"}' +
-',{"abbr" : "I", "name":"05icicle"}' +
-',{"abbr" : "J",          "name":"12jar"}' +
-',{"abbr" : "K",     "name":"11king"}' +
-',{"abbr" : "L",         "name":"09lion"}' +
+' {"abbr" : "A",       "name":"06apple", "order":"06"}' +
+',{"abbr" : "B",          "name":"07banana", "order":"07"}' +
+',{"abbr" : "C",         "name":"04cat", "order":"04"}' +
+',{"abbr" : "D",     "name":"10dog", "order":"10"}' +
+',{"abbr" : "E",   "name":"03elephant", "order":"03"}' +
+',{"abbr" : "F",     "name":"02fox", "order":"02"}' +
+',{"abbr" : "G",       "name":"01giraffe", "order":"01"}' +
+',{"abbr" : "H",   "name":"08horse", "order":"08"}' +
+',{"abbr" : "I", "name":"05icicle", "order":"05"}' +
+',{"abbr" : "J",          "name":"12jar", "order":"12"}' +
+',{"abbr" : "K",     "name":"11king", "order":"11"}' +
+',{"abbr" : "L",         "name":"09lion", "order":"09"}' +
 
 ']';
 
