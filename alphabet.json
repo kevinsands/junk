@@ -11,6 +11,20 @@ data = '[' +
 ',{"abbr" : "D",     "name":"dog", "order":"10"}' +
 ',{"abbr" : "K",     "name":"king", "order":"11"}' +
 ',{"abbr" : "J",          "name":"jar", "order":"12"}' +
+',{"abbr" : "M",     "name":"moose", "order":"15"}' +
+',{"abbr" : "N",   "name":"necklace", "order":"18"}' +
+',{"abbr" : "O",         "name":"orange", "order":"14"}' +
+',{"abbr" : "P", "name":"pineapple", "order":"16"}' +
+',{"abbr" : "Q",       "name":"queen", "order":"22"}' +
+',{"abbr" : "R",          "name":"road", "order":"17"}' +
+',{"abbr" : "S",   "name":"spider", "order":"26"}' +
+',{"abbr" : "T",         "name":"tiger", "order":"19"}' +
+',{"abbr" : "U",     "name":"umbrella", "order":"25"}' +
+',{"abbr" : "V",     "name":"violin", "order":"24"}' +
+',{"abbr" : "W",          "name":"walrus", "order":"20"}' +
+',{"abbr" : "X",     "name":"xray", "order":"23"}' +
+',{"abbr" : "Y",     "name":"yarn", "order":"21"}' +
+',{"abbr" : "Z",          "name":"zebra", "order":"13"}' +
 
 ']';
 
