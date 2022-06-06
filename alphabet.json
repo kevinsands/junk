@@ -1,0 +1,17 @@
+data = '[' +
+' {"abbr" : "A",       "name":"Apple"}' +
+',{"abbr" : "B",          "name":"Banana"}' +
+',{"abbr" : "C",         "name":"Cat"}' +
+',{"abbr" : "D",     "name":"Dog"}' +
+',{"abbr" : "E",   "name":"Elephant"}' +
+',{"abbr" : "F",     "name":"Frog"}' +
+',{"abbr" : "G",       "name":"Giraffe"}' +
+',{"abbr" : "H",   "name":"H"}' +
+',{"abbr" : "I", "name":"Icicle"}' +
+',{"abbr" : "J",          "name":"J"}' +
+',{"abbr" : "K",     "name":"King"}' +
+',{"abbr" : "L",         "name":"Lion"}' +
+
+']';
+
+
