@@ -1,7 +1,8 @@
 <HTML>
 <HEAD>
 <STYLE>
-INPUT[TYPE='RADIO'] {font-size:25pt; transform: scale(1.5);}
+INPUT[TYPE='RADIO'] {transform: scale(1.5);}
+INPUT[TYPE='CHECKBOX'] {font-size:25pt;}
 TEXTAREA {font-size:10pt;}
 BUTTON {font-size:45pt;}
 LABEL {font-size:12pt;border:2px solid blue;border-radius:20px;}
@@ -181,7 +182,7 @@ for (i=0; i<mx; i++) {
 
 document.write("<tr><td>");
 zz= "abbr" + i.toString();
-document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">&nbsp;" + ab[i] + "&nbsp;</button></INPUT>");
 document.write("</td><td>");
 document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">&nbsp;<img src=" + nm[i] + ".jpg width=50 height=50></img>" + "&nbsp;<br></button></INPUT>");
 document.write("</td></tr>");
