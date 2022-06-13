@@ -1,0 +1,7 @@
+data = '[' +
+' {"abbr" : "Maryland",       "name":"md", "order":"01"}' +
+',{"abbr" : "Texas",     "name":"tx", "order":"02"}' +
+
+']';
+
+
