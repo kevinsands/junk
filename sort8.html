@@ -194,7 +194,7 @@ for (i=0; i<mx; i++)
 
 lstx = lstcat[i].substr(0,lstcat[i].indexOf(","));
 alert(lstx);
-catx = lstcat[i].substr(lstcat[i].indexOf(","),lstcat[i].length - substr(lstcat[i].indexOf(","));
+catx = lstcat[i].substr(lstcat[i].indexOf(","),lstcat[i].length - substr(lstcat[i].indexOf(",")));
 alert(catx);
 document.write("<input checked class=" + catx + " id=r" + i.toString() + " name=x type=radio><label id=l" + i.toString() + " onClick=$('r" + i.toString() + "').click()>&nbsp;" + lstx + "</label></input>");
 document.write("<br id=b" + i.toString() + "><br id=c" + i.toString() + ">");
