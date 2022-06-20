@@ -7,7 +7,7 @@ data = '[' +
 ',{"list" : "Pennsylvania",         "cat":"state"}' +
 ',{"list" : "Boston",     "cat":"city"}' +
 ',{"list" : "United States",   "cat":"country"}' +
-',{"list" : "Indiana",     "cat:"state"}' +
+',{"list" : "Indiana",     "cat":"state"}' +
 ',{"list" : "Annapolis",       "cat":"state"}' +
 ',{"list" : "Egypt",   "cat":"country"}' +
 ',{"list" : "Virginia", "cat":"state"}' +
