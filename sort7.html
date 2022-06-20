@@ -70,7 +70,7 @@ function topmoveit()
 let category="state";
 let whistle=false;
 
-for (i=1; i<14; i++) {
+for (0=1; i<mx; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
@@ -90,7 +90,7 @@ function middlemoveit()
 let category="city";
 let whistle=false;
 
-for (i=1; i<14; i++) {
+for (0=1; i<mx; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
@@ -111,7 +111,7 @@ function bottommoveit()
 let category="country";
 let whistle=false;
 
-for (i=1; i<14; i++) {
+for (i=0; i<mx; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
@@ -132,7 +132,7 @@ category="";
 
 var listx = JSON.parse(data);
 
-alert ("after json parse");
+//alert ("after json parse");
 
 let mx = Object.keys(listx).length;
 
@@ -166,7 +166,7 @@ document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source><
 
 document.write("<audio id=honk><source src=zag.wav type=audio/wav></source></audio>");
 
-alert("mx is " + mx.toString());
+//alert("mx is " + mx.toString());
 
   topcount=0;
   middlecount=0;
