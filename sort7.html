@@ -69,8 +69,9 @@ function topmoveit()
 {
 let category="state";
 let whistle=false;
+alert("mx is " + mx.toString());
 
-for (0=1; i<mx; i++) {
+for (i=0; i<16; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
@@ -90,7 +91,7 @@ function middlemoveit()
 let category="city";
 let whistle=false;
 
-for (0=1; i<mx; i++) {
+for (i=0; i<mx; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
