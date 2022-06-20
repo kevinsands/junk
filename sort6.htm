@@ -1,0 +1,179 @@
+
+<HTML>
+<HEAD>
+<STYLE>
+DIV {font-size:12pt;}
+LABEL {text-align:left;font-size:20pt;background-color:cornsilk;}
+OPTION {color:black;background-color:cornsilk;font-size:20pt;}
+TD {vertical-align:top;text-align:left;}
+BUTTON {font-size:25pt;}
+legend {color:black;background-color:cornsilk;font-size:20pt;}
+INPUT[type=radio] {border:0px;width:2em;height:2em;}
+.x {color:black;background-color:cornsilk;font-size:20pt;}
+</STYLE>
+<SCRIPT LANGUAGE=javascript>
+
+//alert(window.location);
+//alert(document.location);
+
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+
+function playWhistle() {
+  $('whistle').play();
+}
+
+function playHonk() {
+  $('honk').play();
+}
+
+function processSelect(division, item) {
+
+    $(division).innerHTML = $(division).innerHTML + "<BR>" + $("l" + item).innerHTML;
+    playWhistle();
+    $("l" + item).style.display = "none";
+    $("r" + item).style.display = "none";
+    $("b" + item).style.display = "none";
+    $("c" + item).style.display = "none";
+
+}
+
+function topmoveit() 
+{
+let category="State";
+let whistle=false;
+
+for (i=1; i<17; i++) {
+  j= i.toString();
+  if (($("r" + j).checked==true) && ($("r" + j).className==category))
+  {
+    processSelect("divtop", j);
+    whistle=true;
+  }
+}
+if (whistle==false) {
+    playHonk();
+}
+}
+
+function middlemoveit() 
+{
+let category="City";
+let whistle=false;
+
+for (i=1; i<17; i++) {
+  j= i.toString();
+  if (($("r" + j).checked==true) && ($("r" + j).className==category))
+  {
+    processSelect("divmid", j);
+    whistle=true;
+  }
+}
+if (whistle==false) {
+    playHonk();
+}
+}
+
+function bottommoveit() 
+{
+let category="Country";
+let whistle=false;
+
+for (i=1; i<17; i++) {
+  j= i.toString();
+  if (($("r" + j).checked==true) && ($("r" + j).className==category))
+  {
+    processSelect("divbottom", j);
+    whistle=true;
+  }
+}
+if (whistle==false) {
+    playHonk();
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<audio id="whistle">
+<source src="whistle.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="honk">
+<source src="honk.wav" type="audio/wav"></source>
+</audio>
+
+<SCRIPT LANGUAGE=javascript>
+  topcount=0;
+  middlecount=0;
+  bottomcount=0;
+  topdiv1="";
+  middiv1="";
+  bottomdiv1="";
+</SCRIPT>
+
+<TABLE border=1 border-collapse=collapse>
+<TR>
+<TD rowspan="3">
+
+<fieldset>
+<legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+<br>
+<input checked class="Country" id="r1" name="x" type=radio><label id="l1" onClick="$('r1').click()">&nbsp;Italy</label></input>
+<br id="b1"><br id="c1">
+<input class="State" id="r2" name="x" type=radio><label id="l2" onClick="$('r2').click()">&nbsp;North Carolina</label></input>
+<br id="b2"><br id="c2">
+<input class="City" id="r3" name="x" type=radio><label id="l3" onClick="$('r3').click()">&nbsp;Raleigh</label></input>
+<br id="b3"><br id="c3">
+<input class="Country" id="r4" name="x" type=radio><label id="l4" onClick="$('r4').click()">&nbsp;Cuba</label></input>
+<br id="b4"><br id="c4">
+<input class="State" id="r5" name="x" type=radio><label id="l5" onClick="$('r5').click()">&nbsp;Kentucky</label></input>
+<br id="b5"><br id="c5">
+<input class="State" id="r6" name="x" type=radio><label id="l6" onClick="$('r6').click()">&nbsp;Tennessee</label></input>
+<br id="b6"><br id="c6">
+<input class="City" id="r7" name="x" type=radio><label id="l7" onClick="$('r7').click()">&nbsp;Albany</label></input>
+<br id="b7"><br id="c7">
+<input class="Country" id="r8" name="x" type=radio><label id="l8" onClick="$('r8').click()">&nbsp;Australia</label></input>
+<br id="b8"><br id="c8">
+<input class="State" id="r9" name="x" type=radio><label id="l9" onClick="$('r9').click()">&nbsp;Ohio</label></input>
+<br id="b9"><br id="c9">
+<input class="City" id="r10" name="x" type=radio><label id="l10" onClick="$('r10').click()">&nbsp;Melbourne</label></input>
+<br id="b10"><br id="c10">
+<input class="Country" id="r11" name="x" type=radio><label id="l11" onClick="$('r11').click()">&nbsp;France</label></input>
+<br id="b11"><br id="c11">
+<input class="State" id="r12" name="x" type=radio><label id="l12" onClick="$('r12').click()">&nbsp;California</label></input>
+<br id="b12"><br id="c12">
+<input class="City" id="r13" name="x" type=radio><label id="l13" onClick="$('r13').click()">&nbsp;Dallas</label></input>
+<br id="b13"><br id="c13">
+<input class="Country" id="r14" name="x" type=radio><label id="l14" onClick="$('r14').click()">&nbsp;Belgium</label></input>
+<br id="b14"><br id="c14">
+<input class="State" id="r15" name="x" type=radio><label id="l15" onClick="$('r15').click()">&nbsp;Michigan</label></input>
+<br id="b15"><br id="c15">
+<input class="State" id="r16" name="x" type=radio><label id="l16" onClick="$('r16').click()">&nbsp;Texas</label></input>
+<br id="b16"><br id="c16">
+</fieldset>
+</TD>
+
+<td>&nbsp;&nbsp;</td>
+<TD><button name=middleb onclick="topmoveit();" >  &#11015;&nbsp;State</button><LABEL></LABEL>:
+<div id="divtop" name="divtop"></div></TD></TR>
+<TR>
+<td>&nbsp;&nbsp;</td>
+<td><button name=middleb onclick="middlemoveit();" >  &#11015;&nbsp;City</button><LABEL></LABEL><br>
+<div id="divmid" name="divmid"></div>
+</TD>
+</TR>
+<TR>
+<td>&nbsp;&nbsp;</td>
+<TD><button name=middleb onclick="bottommoveit();" >  &#11015;&nbsp;Country</button><LABEL></LABEL><br>
+<div id="divbottom" name="divbottom"></div>
+</TD>
+</TR>
+</TABLE>
+
+<script>
+    $('left').size = 5;
+</script>
+</BODY>
+</HTML>
