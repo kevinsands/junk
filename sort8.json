@@ -1,20 +1,20 @@
 data = '[' +
 ' {"list" : "Annapolis",       "cat":"city"}' +
+',{"list" : "Florida",         "cat":"state"}' +
 ',{"list" : "Baltimore",         "cat":"city"}' +
 ',{"list" : "Boston",     "cat":"city"}' +
 ',{"list" : "Canada",     "cat":"country"}' +
 ',{"list" : "Delaware",          "cat":"state"}' +
 ',{"list" : "Egypt",   "cat":"country"}' +
-',{"list" : "Florida",         "cat":"state"}' +
-',{"list" : "France",     "cat":"country"}' +
+',{"list" : "Virginia", "cat":"state"}' +
 ',{"list" : "Georgia",          "cat":"state"}' +
 ',{"list" : "Indiana",     "cat":"state"}' +
 ',{"list" : "Maryland",          "cat":"state"}' +
-',{"list" : "Mexico",       "cat":"country"}' +
 ',{"list" : "Pennsylvania",         "cat":"state"}' +
 ',{"list" : "Richmond",          "cat":"city"}' +
 ',{"list" : "United States",   "cat":"country"}' +
-',{"list" : "Virginia", "cat":"state"}' +
+',{"list" : "France",     "cat":"country"}' +
+',{"list" : "Mexico",       "cat":"country"}' +
 
 ']';
 
