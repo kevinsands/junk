@@ -69,9 +69,8 @@ function topmoveit()
 {
 let category="state";
 let whistle=false;
-alert("mx is " + mx.toString());
 
-for (i=0; i<16; i++) {
+for (i=0; i<mx; i++) {
   j= i.toString();
   if (($("r" + j).checked==true) && ($("r" + j).className==category))
   {
@@ -139,8 +138,8 @@ let mx = Object.keys(listx).length;
 
 var lst = new Array();
 var cat = new Array();
-var lstval = new Array();
-var catval = new Array();
+//var lstval = new Array();
+//var catval = new Array();
 
 //alert("1");
 for (i=0; i<mx; i++)
@@ -149,19 +148,19 @@ for (i=0; i<mx; i++)
   cat[i] = listx[i].cat;
 }
 
-lst.sort();
-cat.sort();
+//lst.sort();
+//cat.sort();
 
-for (j=0; j<mx; j++)
-  for (i=0; i<mx; i++)
-    if (cat[j] == listx[i].cat)
-      catval[j]=i.toString();
+//for (j=0; j<mx; j++)
+//  for (i=0; i<mx; i++)
+//    if (cat[j] == listx[i].cat)
+//      catval[j]=i.toString();
 
 
-for (j=0; j<mx; j++)
-  for (i=0; i<mx; i++)
-    if (lst[j] == listx[i].list)
-      lstval[j]=i.toString();
+//for (j=0; j<mx; j++)
+//  for (i=0; i<mx; i++)
+//    if (lst[j] == listx[i].list)
+//      lstval[j]=i.toString();
 
 document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
 
