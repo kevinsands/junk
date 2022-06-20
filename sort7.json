@@ -1,6 +1,20 @@
 data = '[' +
 ' {"list" : "Mexico",       "cat":"country"}' +
 ',{"list" : "Maryland",          "cat":"state"}' +
+',{"list" : "Baltimore",         "cat":"city"}' +
+',{"list" : "Canada",     "cat":"country"}' +
+',{"list" : "Delaware",          "cat":"state"}' +
+',{"list" : "Pennsylvania",         "cat":"state"}' +
+',{"list" : "Boston",     "cat":"city"}' +
+',{"list" : "United States",   "cat":"country"}' +
+',{"list" : "Indiana",     "cat:"state"}' +
+',{"list" : "Annapolis",       "cat":"state"}' +
+',{"list" : "Egypt",   "cat":"country"}' +
+',{"list" : "Virginia", "cat":"state"}' +
+',{"list" : "Richmond",          "cat":"city"}' +
+',{"list" : "France",     "cat":"country"}' +
+',{"list" : "Florida",         "cat":"state"}' +
+',{"list" : "Georgia",          "cat":"state"}' +
 
 ']';
 
