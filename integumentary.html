@@ -1,0 +1,458 @@
+<HTML>
+<HEAD>
+<STYLE>
+INPUT[TYPE='RADIO'] {transform: scale(1.5);}
+INPUT[TYPE='checkbox'] {transform: scale(1.5);}
+TEXTAREA {font-size:10pt;}
+BUTTON {font-size:20pt;}
+SELECT {font-size:20pt;}
+LABEL {font-size:20pt;border:2px solid blue;border-radius:20px;}
+table {border-collapse:collapse;}
+.gone {display:none;}
+</STYLE>
+</HEAD>
+<BODY>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+<script type="text/javascript" src="integumentary.json"></script>
+
+<script>
+
+//alert(String.fromCharCode(22));
+
+let selState = " ";
+let wrongStr = " ";
+
+var $ = function(id) {
+  return document.getElementById(id);
+
+}
+function nothing() {}
+
+function playWhistle() {
+  if ($('cbx').checked)
+  $('whistle').play();
+}
+
+function playHonk() {
+  if ($('cbx').checked)
+  $('honk').play();
+}
+
+function sortState() {
+    var tmpAry = new Array();
+alert($('state'));
+    for (var i=0;i<$('state').options.length;i++) {
+        tmpAry[i] = new Array();
+        tmpAry[i][0] = $('state').options[i].text;
+        tmpAry[i][1] = $('state').options[i].value;
+    }
+    tmpAry.sort();
+    while ($('state').options.length > 0) {
+        $('state').options[0] = null;
+    }
+    for (var i=0;i<tmpAry.length;i++) {
+        var op = new Option(tmpAry[i][0], tmpAry[i][1]);
+        $('state').options[i] = op;
+    }
+    return;
+}
+
+function checkMatch() {
+
+
+//alert("in function");
+    selState = $('state').value;
+
+    if (($('number').value== $('state').value) && ($('state').selectedIndex!=-1) && ($('number').selectedIndex!=-1) )
+    {
+
+      if ($('number').value == "A") $('lbl01').innerText="";
+      if ($('number').value == "B") $('lbl02').innerText="";
+      if ($('number').value == "C") $('lbl03').innerText="";
+      if ($('number').value == "D") $('lbl04').innerText="";
+      if ($('number').value == "E") $('lbl05').innerText="";
+      if ($('number').value == "F") $('lbl06').innerText="";
+      if ($('number').value == "G") $('lbl07').innerText="";
+      if ($('number').value == "H") $('lbl08').innerText="";
+      if ($('number').value == "I") $('lbl09').innerText="";
+      if ($('number').value == "J") $('lbl10').innerText="";
+      if ($('number').value == "K") $('lbl11').innerText="";
+      if ($('number').value == "L") $('lbl12').innerText="";
+      if ($('number').value == "M") $('lbl13').innerText="";
+      if ($('number').value == "N") $('lbl14').innerText="";
+      if ($('number').value == "O") $('lbl15').innerText="";
+      if ($('number').value == "P") $('lbl16').innerText="";
+      if ($('number').value == "Q") $('lbl17').innerText="";
+      if ($('number').value == "R") $('lbl18').innerText="";
+      if ($('number').value == "S") $('lbl19').innerText="";
+      if ($('number').value == "T") $('lbl20').innerText="";
+      if ($('number').value == "U") $('lbl21').innerText="";
+      if ($('number').value == "V") $('lbl22').innerText="";
+      if ($('number').value == "W") $('lbl23').innerText="";
+      if ($('number').value == "X") $('lbl24').innerText="";
+      if ($('number').value == "Y") $('lbl25').innerText="";
+      if ($('number').value == "Z") $('lbl26').innerText="";
+      if ($('number').value == "AA") $('lbl27').innerText="";
+      if ($('number').value == "BB") $('lbl28').innerText="";
+      if ($('number').value == "CC") $('lbl29').innerText="";
+      if ($('number').value == "DD") $('lbl30').innerText="";
+      if ($('number').value == "EE") $('lbl31').innerText="";
+      if ($('number').value == "FF") $('lbl32').innerText="";
+      if ($('number').value == "GG") $('lbl33').innerText="";
+      if ($('number').value == "HH") $('lbl34').innerText="";
+      if ($('number').value == "II") $('lbl35').innerText="";
+      if ($('number').value == "JJ") $('lbl36').innerText="";
+      if ($('number').value == "KK") $('lbl37').innerText="";
+      if ($('number').value == "LL") $('lbl38').innerText="";
+      if ($('number').value == "MM") $('lbl39').innerText="";
+      if ($('number').value == "NN") $('lbl40').innerText="";
+      if ($('number').value == "OO") $('lbl41').innerText="";
+      if ($('number').value == "PP") $('lbl42').innerText="";
+      if ($('number').value == "QQ") $('lbl43').innerText="";
+      if ($('number').value == "RR") $('lbl44').innerText="";
+      if ($('number').value == "SS") $('lbl45').innerText="";
+      if ($('number').value == "TT") $('lbl46').innerText="";
+      if ($('number').value == "UU") $('lbl47').innerText="";
+      if ($('number').value == "VV") $('lbl48').innerText="";
+      if ($('number').value == "WW") $('lbl49').innerText="";
+      if ($('number').value == "XX") $('lbl50').innerText="";
+
+      var si = $('state').selectedIndex;
+      $('state').options.remove(si);
+      $('state').value = "";
+
+      selIndex = $('number').selectedIndex;
+
+      var sn = $('number').selectedIndex;
+      $('number').options.remove(sn);
+      $('number').value = "";
+
+//      $('number').options.remove([$('number').selectedIndex]);
+//      $('number').options.length = count;
+
+
+
+//      $('state').selectedIndex = 0;
+
+//      $('state').selectedIndex = count;
+
+//      $('state').selectedIndex = -1;
+
+ //     $('number').selectedIndex = 0;
+
+//      $('number').selectedIndex = count;
+ 
+ //    $('number').selectedIndex = -1;
+
+alert("Match");
+
+          playWhistle();
+
+    }
+    else {
+     playHonk();
+     wrongStr = wrongStr + ", " + selState ;
+alert("not match");
+//      alert( wrongStr);
+    }
+//      alert( ($('number').options.length).toString());
+
+  }
+
+document.write("<audio id=whistle><source src=POOK.WAV type=audio/wav></source></audio>");
+
+document.write("<audio id=honk><source src=honk.wav type=audio/wav></source></audio>");
+
+document.write("<DIV style='LEFT:20px; POSITION:absolute; TOP:500px'>");
+document.write("<input id=cbx type=checkbox name=cbx checked><label class=snd>&nbsp;Sound</label></input></div>");
+
+
+//alert('1');
+document.write("<DIV style='LEFT:0px; POSITION:absolute; TOP:0px'>");
+document.write("<IMG height=450 src='integumentary.jpg' width=699> </DIV>");
+
+//document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:45px'>");
+//document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:526px; POSITION:absolute;TOP:80px'>");
+//document.write("<B><LABEL id=lbl02 onclick=$('number').value='B';>B</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:505px; POSITION:absolute;TOP:75px'>");
+//document.write("<B><LABEL id=lbl03 onclick=$('number').value='C';>C</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:530px; POSITION:absolute;TOP:97px'>");
+//document.write("<B><LABEL id=lbl04 onclick=$('number').value='D';>D</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:485px; POSITION:absolute;TOP:85px'>");
+//document.write("<B><LABEL id=lbl05 onclick=$('number').value='E';>E</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:580px; POSITION:absolute;TOP:105px'>");
+//document.write("<B><LABEL id=lbl06 onclick=$('number').value='F';>F</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:560px; POSITION:absolute;TOP:130px'>");
+//document.write("<B><LABEL id=lbl07 onclick=$('number').value='G';>G</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:460px; POSITION:absolute;TOP:125px'>");
+//document.write("<B><LABEL id=lbl08 onclick=$('number').value='H';>H</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:510px; POSITION:absolute;TOP:125px'>");
+//document.write("<B><LABEL id=lbl09 onclick=$('number').value='I';>I</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:155px'>");
+//document.write("<B><LABEL id=lbl10 onclick=$('number').value='J';>J</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:545px; POSITION:absolute;TOP:190px'>");
+//document.write("<B><LABEL id=lbl11 onclick=$('number').value='K';>K</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:470px; POSITION:absolute;TOP:170px'>");
+//document.write("<B><LABEL id=lbl12 onclick=$('number').value='L';>L</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:465px; POSITION:absolute;TOP:200px'>");
+//document.write("<B><LABEL id=lbl13 onclick=$('number').value='M';>M</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:455px; POSITION:absolute;TOP:220px'>");
+//document.write("<B><LABEL id=lbl14 onclick=$('number').value='N';>N</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:430px; POSITION:absolute;TOP:250px'>");
+//document.write("<B><LABEL id=lbl15 onclick=$('number').value='O';>O</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:455px; POSITION:absolute;TOP:295px'>");
+//document.write("<B><LABEL id=lbl16 onclick=$('number').value='P';>P</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:385px; POSITION:absolute;TOP:145px'>");
+//document.write("<B><LABEL id=lbl17 onclick=$('number').value='Q';>Q</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:420px; POSITION:absolute;TOP:145px'>");
+//document.write("<B><LABEL id=lbl18 onclick=$('number').value='R';>R</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:445px; POSITION:absolute;TOP:165px'>");
+//document.write("<B><LABEL id=lbl19 onclick=$('number').value='S';>S</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:410px; POSITION:absolute;TOP:180px'>");
+//document.write("<B><LABEL id=lbl20 onclick=$('number').value='T';>T</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:390px; POSITION:absolute;TOP:205px'>");
+//document.write("<B><LABEL id=lbl21 onclick=$('number').value='U';>U</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:390px; POSITION:absolute;TOP:245px'>");
+//document.write("<B><LABEL id=lbl22 onclick=$('number').value='V';>V</LABEL></B> </DIV>");
+
+//document.write("<DIV style='LEFT:345px; POSITION:absolute;TOP:95px'>");
+//document.write("<B><LABEL id=lbl23 onclick=$('number').value='W';>W</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:395px; POSITION:absolute;TOP:105px'>");
+//document.write("<B><LABEL id=lbl24 onclick=$('number').value='X';>X</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:355px; POSITION:absolute;TOP:145px'>");
+//document.write("<B><LABEL id=lbl25 onclick=$('number').value='Y';>Y</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:360px; POSITION:absolute;TOP:240px'>");
+//document.write("<B><LABEL id=lbl26 onclick=$('number').value='Z';>Z</LABEL></B> </DIV>");
+
+document.write("<DIV style='LEFT:290px; POSITION:absolute;TOP:75px'>");
+document.write("<B><LABEL id=lbl27 onclick=$('number').value='AA';>AA</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:300px; POSITION:absolute;TOP:125px'>");
+document.write("<B><LABEL id=lbl28 onclick=$('number').value='BB';>BB</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:310px; POSITION:absolute;TOP:175px'>");
+document.write("<B><LABEL id=lbl29 onclick=$('number').value='CC';>CC</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:215px'>");
+document.write("<B><LABEL id=lbl30 onclick=$('number').value='DD';>DD</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:265px'>");
+document.write("<B><LABEL id=lbl31 onclick=$('number').value='EE';>EE</LABEL></B> </DIV>");
+
+document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:50px'>");
+document.write("<B><LABEL id=lbl32 onclick=$('number').value='FF';>FF</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:95px'>");
+document.write("<B><LABEL id=lbl33 onclick=$('number').value='GG';>GG</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:130px'>");
+document.write("<B><LABEL id=lbl34 onclick=$('number').value='HH';>HH</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:265px; POSITION:absolute;TOP:175px'>");
+document.write("<B><LABEL id=lbl35 onclick=$('number').value='II';>II</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:275px; POSITION:absolute;TOP:210px'>");
+document.write("<B><LABEL id=lbl36 onclick=$('number').value='JJ';>JJ</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:255px'>");
+document.write("<B><LABEL id=lbl37 onclick=$('number').value='KK';>KK</LABEL></B> </DIV>");
+
+
+document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:45px'>");
+document.write("<B><LABEL id=lbl38 onclick=$('number').value='LL';>LL</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:155px; POSITION:absolute;TOP:105px'>");
+document.write("<B><LABEL id=lbl39 onclick=$('number').value='MM';>MM</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:175px; POSITION:absolute;TOP:155px'>");
+document.write("<B><LABEL id=lbl40 onclick=$('number').value='NN';>NN</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:225px'>");
+document.write("<B><LABEL id=lbl41 onclick=$('number').value='OO';>OO</LABEL></B> </DIV>");
+
+document.write("<DIV style='LEFT:100px; POSITION:absolute;TOP:90px'>");
+document.write("<B><LABEL id=lbl42 onclick=$('number').value='PP';>PP</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:120px; POSITION:absolute;TOP:150px'>");
+document.write("<B><LABEL id=lbl43 onclick=$('number').value='QQ';>QQ</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:110px; POSITION:absolute;TOP:215px'>");
+document.write("<B><LABEL id=lbl44 onclick=$('number').value='RR';>RR</LABEL></B> </DIV>");
+
+document.write("<DIV style='LEFT:55px; POSITION:absolute;TOP:30px'>");
+document.write("<B><LABEL id=lbl45 onclick=$('number').value='SS';>SS</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:45px; POSITION:absolute;TOP:75px'>");
+document.write("<B><LABEL id=lbl46 onclick=$('number').value='TT';>TT</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:35px; POSITION:absolute;TOP:170px'>");
+document.write("<B><LABEL id=lbl47 onclick=$('number').value='UU';>UU</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:70px; POSITION:absolute;TOP:135px'>");
+document.write("<B><LABEL id=lbl48 onclick=$('number').value='VV';>VV</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:230px; POSITION:absolute;TOP:305px'>");
+document.write("<B><LABEL id=lbl49 onclick=$('number').value='WW';>WW</LABEL></B> </DIV>");
+document.write("<DIV style='LEFT:280px; POSITION:absolute;TOP:305px'>");
+document.write("<B><LABEL id=lbl50 onclick=$('number').value='XX';>XX</LABEL></B> </DIV>");
+
+//alert ('before json');
+let right =0;
+let wrong = 0;
+let distinctwrong = 0;
+//let wrongStr = "'None',";
+let S = "";
+//alert('1');
+let nowdatetime = new Date();
+//alert('2');
+let nowdate = nowdatetime.getFullYear()+'-'+(nowdatetime.getMonth()+1)+'-'+nowdatetime.getDate();
+let nowtime = nowdatetime.getHours() + ":" + nowdatetime.getMinutes() + ":" + nowdatetime.getSeconds();
+
+//alert(nowdate);
+//alert(nowtime);
+
+//alert('a');
+var list = JSON.parse(data);
+//alert('b');
+let mx = Object.keys(list).length;
+//alert(mx.toString());
+
+var lbl = new Array();
+var nm = new Array();
+var x = new Array();
+var y = new Array();
+var lblnum = new Array();
+var abval = new Array();
+var nmval = new Array();
+var clickS = "";
+var styleS = "";
+var writeS = "";
+
+
+//alert ('after json');
+
+//for (i=0; i<mx; i++)
+for (i=0; i<26; i++)
+{
+  x[i] = list[i].x + "px";
+  y[i] = list[i].y + "px";
+  lblnum[i] = list[i].lblnum;
+  lbl[i] = list[i].lbl;
+//alert(x[i]);
+//alert(y[i]);
+
+//  nm[i] = list[i].name;
+styleS = "LEFT:" + x[i] + "; POSITION:absolute;TOP:" + y[i] + ";";
+//alert(styleS);
+document.write("<DIV style='" + styleS + "' >");
+
+clickS = "\"" + "$('number').value='" + lbl[i] + "';" + "\"" ;
+//alert(clickS);
+
+writeS = "<B><LABEL id=" + lblnum[i] + " onClick=" + clickS + " >" + lbl[i] + "</LABEL></B></DIV>";
+//alert(writeS);
+document.write(writeS);
+
+}
+
+document.write("<DIV style='LEFT: 20px; POSITION: absolute; TOP: 450px'>");
+document.write("<SELECT id=number size=10 name=number> ");
+document.write("<OPTGROUP LABEL=Numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
+for (i=0; i<mx; i++)
+{
+  lbl[i] = list[i].lbl;
+
+  document.write("<OPTION value=" + lbl[i] + ">" + lbl[i] + "</OPTION>");
+}
+document.write("</oPTGROUP>");
+document.write("</select></div> ");
+
+//
+document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
+document.write("<SELECT id=state size=10 name=state onChange=checkMatch();> ");
+document.write("<OPTGROUP LABEL=Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
+for (i=0; i<mx; i++)
+{
+  lbl[i] = list[i].lbl;
+  nm[i] = list[i].name;
+
+  document.write("<OPTION value=" + lbl[i] + ">" + nm[i] + "</OPTION>");
+}
+document.write("</OPTGROUP>");
+document.write("</SELECT></DIV> ");
+
+//alert('screen write complete');
+//
+//document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
+//document.write("<SELECT id=state size=10 name=state> ");
+//document.write("<OPTGROUP LABEL=States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
+
+//for (i=0; i<mx; i++)
+//{
+//document.write("<OPTION value=" + abbr[i] + ">" + name[i] + "</OPTION>");
+//}
+
+//document.write("</SELECT></div>");
+
+
+//ab.sort();
+nm.sort();
+
+for (j=0; j<mx; j++)
+  for (i=0; i<mx; i++)
+    if (nm[j] == list[i].name)
+      nmval[j]=i.toString();
+
+
+//for (j=0; j<mx; j++)
+//  for (i=0; i<mx; i++)
+//    if (ab[j] == list[i].abbr)
+//      abval[j]=i.toString();
+
+
+//document.write("<TABLE id=tb1 ><tr><th>Percent</th><th>Equivalent</th></tr>");
+
+//for (i=0; i<mx; i++) {
+
+
+//document.write("<tr><td>");
+//zz= "abbr" + i.toString();
+//document.write("<INPUT class=gone onClick=press(mx) value =" + abval[i] + " type=radio name=abbr id=abbr" + i.toString() + " value=a ><button onClick=$('abbr" + i.toString() + "').click() id=lx" + i.toString() + ">" + ab[i] + "</button></INPUT>");
+//document.write("</td><td>");
+//document.write("<INPUT class=gone onClick=press(mx) value =" + nmval[i] + " type=radio name=name id=name" + i.toString() + " value=b ><button onClick=$('name" + i.toString() + "').click() id=ly" + i.toString() + ">" + nm[i] + "<br></button></INPUT>");
+//document.write("</td></tr>");
+
+//} 
+//document.write("</TABLE>");
+//document.write("<br><BUTTON  id=btn1 onclick='press(mx);'>Go</button><br>");
+
+//$("prob0").style.background = "cornsilk";
+//$("prob1").style.background = "yellow";
+//$("prob2").style.background = "aqua";
+
+//<br><TEXTAREA id=t3 rows=10 cols=20 readonly></TEXTAREA>
+
+//var elem = document.querySelector($("abbr3"));
+//elem.style.display = 'none';
+//alert($('abbr0').innerHTML);
+//$('abbr0').style.display = "none";
+
+
+//$("lx0").style.display = "none";
+//$("ly0").style.display = "none";
+//$("abbr0").style.display = "none";
+//$("name0").style.display = "none";
+
+//$("lx4").style.display = "none";
+//$("ly4").style.display = "none";
+//$("abbr4").style.display = "none";
+//$("name4").style.display = "none";
+
+
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+//document.getElementById("tb1").deleteRow(0);
+
+sortState();
+
+</script>
+
+
+</BODY>
+
+</HTML>
