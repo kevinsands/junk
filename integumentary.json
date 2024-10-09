@@ -1,7 +1,7 @@
 data = '[' +
-' {"lbl":"A", "name":"Epidermis", "x":"20", "y":"120", "lblnum":"lbl01" }' +
-',{"lbl":"B", "name":"Dermis", "x":"20", "y":"200", "lblnum":"lbl02"}' +
-',{"lbl":"C", "name":"Sub-cutaneous layer", "x":"20", "y":"300", "lblnum":"lbl03" }' +
+' {"lbl":"a", "name":"Epidermis", "x":"20", "y":"120", "lblnum":"lbl01" }' +
+',{"lbl":"b", "name":"Dermis", "x":"20", "y":"200", "lblnum":"lbl02"}' +
+',{"lbl":"c", "name":"Sub-cutaneous layer", "x":"20", "y":"300", "lblnum":"lbl03" }' +
 ',{"lbl":"d", "name":"Hair Shaft", "x":"420", "y":"5", "lblnum":"lbl04" }' +
 ',{"lbl":"e", "name":"Sweat Gland Pore", "x":"420", "y":"55", "lblnum":"lbl05" }' +
 ',{"lbl":"f", "name":"Sweat", "x":"400", "y":"75", "lblnum":"lbl06" }' +
