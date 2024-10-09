@@ -2,51 +2,23 @@ data = '[' +
 ' {"lbl":"A", "name":"Epidermis", "x":"20", "y":"120", "lblnum":"lbl01" }' +
 ',{"lbl":"B", "name":"Dermis", "x":"20", "y":"200", "lblnum":"lbl02"}' +
 ',{"lbl":"C", "name":"Sub-cutaneous layer", "x":"20", "y":"300", "lblnum":"lbl03" }' +
-',{"lbl":"D", "name":"Massachussetts", "x":"530", "y":"97", "lblnum":"lbl04" }' +
-',{"lbl":"E", "name":"New York", "x":"485", "y":"85", "lblnum":"lbl05" }' +
-',{"lbl":"F", "name":"Rhode Island", "x":"580", "y":"105", "lblnum":"lbl06" }' +
-',{"lbl":"G", "name":"Connecticut", "x":"560", "y":"130", "lblnum":"lbl07" }' +
-',{"lbl":"H", "name":"Pennsylvania", "x":"460", "y":"125", "lblnum":"lbl08" }' +
-',{"lbl":"I", "name":"New Jersey", "x":"510", "y":"125", "lblnum":"lbl09" }' +
-',{"lbl":"J", "name":"Delaware", "x":"535", "y":"155", "lblnum":"lbl10" }' +
-',{"lbl":"K", "name":"Maryland", "x":"545", "y":"190", "lblnum":"lbl11" }' +
-',{"lbl":"L", "name":"Virginia", "x":"470", "y":"170", "lblnum":"lbl12" }' +
-',{"lbl":"M", "name":"North Carolina", "x":"465", "y":"200", "lblnum":"lbl13" }' +
-',{"lbl":"N", "name":"South Carolina", "x":"455", "y":"220", "lblnum":"lbl14" }' +
-',{"lbl":"O", "name":"Georgia", "x":"430", "y":"250", "lblnum":"lbl15" }' +
-',{"lbl":"P", "name":"Florida", "x":"455", "y":"295", "lblnum":"lbl16" }' +
-',{"lbl":"Q", "name":"Indiana", "x":"385", "y":"145", "lblnum":"lbl17" }' +
-',{"lbl":"R", "name":"Ohio", "x":"420", "y":"145", "lblnum":"lbl18" }' +
-',{"lbl":"S", "name":"West Virginia", "x":"445", "y":"165", "lblnum":"lbl19" }' +
-',{"lbl":"T", "name":"Kentucky", "x":"410", "y":"180", "lblnum":"lbl20" }' +
-',{"lbl":"U", "name":"Tennessee", "x":"390", "y":"205", "lblnum":"lbl21" }' +
-',{"lbl":"V", "name":"Alabama", "x":"390", "y":"245", "lblnum":"lbl22" }' +
-',{"lbl":"W", "name":"Wisconsin", "x":"345", "y":"95", "lblnum":"lbl23" }' +
-',{"lbl":"X", "name":"Michigan", "x":"395", "y":"105", "lblnum":"lbl24" }' +
-',{"lbl":"Y", "name":"Illinois", "x":"355", "y":"145", "lblnum":"lbl25" }' +
-',{"lbl":"Z", "name":"Mississippi", "x":"360", "y":"240", "lblnum":"lbl26" }' +
-',{"lbl":"AA", "name":"Minnesota", "x":"30", "y":"30", "lblnum":"lbl27" }' +
-',{"lbl":"BB", "name":"Iowa", "x":"30", "y":"30", "lblnum":"lbl28" }' +
-',{"lbl":"CC", "name":"Missouri", "x":"30", "y":"30", "lblnum":"lbl29" }' +
-',{"lbl":"DD", "name":"Arkansas", "x":"30", "y":"30", "lblnum":"lbl30" }' +
-',{"lbl":"EE", "name":"Louisiana", "x":"30", "y":"30", "lblnum":"lbl31" }' +
-',{"lbl":"FF", "name":"North Dakota", "x":"30", "y":"30", "lblnum":"lbl32" }' +
-',{"lbl":"GG", "name":"South Dakota", "x":"30", "y":"30", "lblnum":"lbl33" }' +
-',{"lbl":"HH", "name":"Nebraska", "x":"30", "y":"30", "lblnum":"lbl34" }' +
-',{"lbl":"II", "name":"Kansas", "x":"30", "y":"30", "lblnum":"lbl35" }' +
-',{"lbl":"JJ", "name":"Oklahoma", "x":"30", "y":"30", "lblnum":"lbl36" }' +
-',{"lbl":"KK", "name":"Texas", "x":"30", "y":"30", "lblnum":"lbl37" }' +
-',{"lbl":"LL", "name":"Montana", "x":"30", "y":"30", "lblnum":"lbl38" }' +
-',{"lbl":"MM", "name":"Wyoming", "x":"30", "y":"30", "lblnum":"lbl39" }' +
-',{"lbl":"NN", "name":"Colorado", "x":"30", "y":"30", "lblnum":"lbl40" }' +
-',{"lbl":"OO", "name":"New Mexico", "x":"30", "y":"30", "lblnum":"lbl41" }' +
-',{"lbl":"PP", "name":"Idaho", "x":"30", "y":"30", "lblnum":"lbl42" }' +
-',{"lbl":"QQ", "name":"Utah", "x":"30", "y":"30", "lblnum":"lbl43" }' +
-',{"lbl":"RR", "name":"Arizona", "x":"30", "y":"30", "lblnum":"lbl44" }' +
-',{"lbl":"SS", "name":"Washington", "x":"30", "y":"30", "lblnum":"lbl45" }' +
-',{"lbl":"TT", "name":"Oregon", "x":"30", "y":"30", "lblnum":"lbl46" }' +
-',{"lbl":"UU", "name":"California", "x":"30", "lblnum":"lbl47" }' +
-',{"lbl":"VV", "name":"Nevada", "x":"30", "y":"30", "lblnum":"lbl48" }' +
-',{"lbl":"WW", "name":"Hawaii", "x":"30", "y":"30", "lblnum":"lbl49" }' +
-',{"lbl":"XX", "name":"Alaska", "x":"30", "y":"30", "lblnum":"lbl50" }' +
+',{"lbl":"d", "name":"Hair Shaft", "x":"420", "y":"5", "lblnum":"lbl04" }' +
+',{"lbl":"e", "name":"Sweat Gland Pore", "x":"420", "y":"55", "lblnum":"lbl05" }' +
+',{"lbl":"f", "name":"Sweat", "x":"400", "y":"75", "lblnum":"lbl06" }' +
+',{"lbl":"g", "name":"Stratum Corneum", "x":"420", "y":"90", "lblnum":"lbl07" }' +
+',{"lbl":"h", "name":"Stratum Basale", "x":"400", "y":"110", "lblnum":"lbl08" }' +
+',{"lbl":"i", "name":"Dermal Papilla", "x":"440", "y":"125", "lblnum":"lbl09" }' +
+',{"lbl":"j", "name":"Basement Membrane", "x":"400", "y":"145", "lblnum":"lbl10" }' +
+',{"lbl":"k", "name":"Capillary", "x":"420", "y":"170", "lblnum":"lbl11" }' +
+',{"lbl":"l", "name":"Tactile Corpuscle", "x":"400", "y":"190", "lblnum":"lbl12" }' +
+',{"lbl":"m", "name":"Sweat Gland Duct", "x":"420", "y":"210", "lblnum":"lbl13" }' +
+',{"lbl":"n", "name":"Sebaceous Gland", "x":"400", "y":"230", "lblnum":"lbl14" }' +
+',{"lbl":"o", "name":"Arrector Pili Muscle", "x":"430", "y":"245", "lblnum":"lbl15" }' +
+',{"lbl":"p", "name":"Sweat Gland", "x":"410", "y":"255", "lblnum":"lbl16" }' +
+',{"lbl":"q", "name":"Lamellated Corpuscle", "x":"400", "y":"275", "lblnum":"lbl17" }' +
+',{"lbl":"r", "name":"Hair Folicle", "x":"420", "y":"305", "lblnum":"lbl18" }' +
+',{"lbl":"s", "name":"Adipose Tissue", "x":"400", "y":"325", "lblnum":"lbl19" }' +
+',{"lbl":"t", "name":"Nerve Cell Process", "x":"420", "y":"345", "lblnum":"lbl20" }' +
+',{"lbl":"u", "name":"Blood Vessels", "x":"400", "y":"370", "lblnum":"lbl21" }' +
+',{"lbl":"v", "name":"Muscle Layer", "x":"420", "y":"395", "lblnum":"lbl22" }' +
 ']';

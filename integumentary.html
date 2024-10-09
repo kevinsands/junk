@@ -40,7 +40,7 @@ function playHonk() {
 
 function sortState() {
     var tmpAry = new Array();
-alert($('state'));
+//alert($('state'));
     for (var i=0;i<$('state').options.length;i++) {
         tmpAry[i] = new Array();
         tmpAry[i][0] = $('state').options[i].text;
@@ -88,34 +88,6 @@ function checkMatch() {
       if ($('number').value == "T") $('lbl20').innerText="";
       if ($('number').value == "U") $('lbl21').innerText="";
       if ($('number').value == "V") $('lbl22').innerText="";
-      if ($('number').value == "W") $('lbl23').innerText="";
-      if ($('number').value == "X") $('lbl24').innerText="";
-      if ($('number').value == "Y") $('lbl25').innerText="";
-      if ($('number').value == "Z") $('lbl26').innerText="";
-      if ($('number').value == "AA") $('lbl27').innerText="";
-      if ($('number').value == "BB") $('lbl28').innerText="";
-      if ($('number').value == "CC") $('lbl29').innerText="";
-      if ($('number').value == "DD") $('lbl30').innerText="";
-      if ($('number').value == "EE") $('lbl31').innerText="";
-      if ($('number').value == "FF") $('lbl32').innerText="";
-      if ($('number').value == "GG") $('lbl33').innerText="";
-      if ($('number').value == "HH") $('lbl34').innerText="";
-      if ($('number').value == "II") $('lbl35').innerText="";
-      if ($('number').value == "JJ") $('lbl36').innerText="";
-      if ($('number').value == "KK") $('lbl37').innerText="";
-      if ($('number').value == "LL") $('lbl38').innerText="";
-      if ($('number').value == "MM") $('lbl39').innerText="";
-      if ($('number').value == "NN") $('lbl40').innerText="";
-      if ($('number').value == "OO") $('lbl41').innerText="";
-      if ($('number').value == "PP") $('lbl42').innerText="";
-      if ($('number').value == "QQ") $('lbl43').innerText="";
-      if ($('number').value == "RR") $('lbl44').innerText="";
-      if ($('number').value == "SS") $('lbl45').innerText="";
-      if ($('number').value == "TT") $('lbl46').innerText="";
-      if ($('number').value == "UU") $('lbl47').innerText="";
-      if ($('number').value == "VV") $('lbl48').innerText="";
-      if ($('number').value == "WW") $('lbl49').innerText="";
-      if ($('number').value == "XX") $('lbl50').innerText="";
 
       var si = $('state').selectedIndex;
       $('state').options.remove(si);
@@ -144,7 +116,7 @@ function checkMatch() {
  
  //    $('number').selectedIndex = -1;
 
-alert("Match");
+//alert("Match");
 
           playWhistle();
 
@@ -152,7 +124,7 @@ alert("Match");
     else {
      playHonk();
      wrongStr = wrongStr + ", " + selState ;
-alert("not match");
+//alert("not match");
 //      alert( wrongStr);
     }
 //      alert( ($('number').options.length).toString());
@@ -171,122 +143,60 @@ document.write("<input id=cbx type=checkbox name=cbx checked><label class=snd>&n
 document.write("<DIV style='LEFT:0px; POSITION:absolute; TOP:0px'>");
 document.write("<IMG height=450 src='integumentary.jpg' width=699> </DIV>");
 
-//document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:45px'>");
-//document.write("<B><LABEL id=lbl01 onclick=$('number').value='A';>A</LABEL></B> </DIV>");
 
-//document.write("<DIV style='LEFT:526px; POSITION:absolute;TOP:80px'>");
-//document.write("<B><LABEL id=lbl02 onclick=$('number').value='B';>B</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:290px; POSITION:absolute;TOP:75px'>");
+//document.write("<B><LABEL id=lbl27 onclick=$('number').value='AA';>AA</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:300px; POSITION:absolute;TOP:125px'>");
+//document.write("<B><LABEL id=lbl28 onclick=$('number').value='BB';>BB</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:310px; POSITION:absolute;TOP:175px'>");
+//document.write("<B><LABEL id=lbl29 onclick=$('number').value='CC';>CC</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:215px'>");
+//document.write("<B><LABEL id=lbl30 onclick=$('number').value='DD';>DD</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:265px'>");
+//document.write("<B><LABEL id=lbl31 onclick=$('number').value='EE';>EE</LABEL></B> </DIV>");
 
-//document.write("<DIV style='LEFT:505px; POSITION:absolute;TOP:75px'>");
-//document.write("<B><LABEL id=lbl03 onclick=$('number').value='C';>C</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:530px; POSITION:absolute;TOP:97px'>");
-//document.write("<B><LABEL id=lbl04 onclick=$('number').value='D';>D</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:485px; POSITION:absolute;TOP:85px'>");
-//document.write("<B><LABEL id=lbl05 onclick=$('number').value='E';>E</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:580px; POSITION:absolute;TOP:105px'>");
-//document.write("<B><LABEL id=lbl06 onclick=$('number').value='F';>F</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:560px; POSITION:absolute;TOP:130px'>");
-//document.write("<B><LABEL id=lbl07 onclick=$('number').value='G';>G</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:460px; POSITION:absolute;TOP:125px'>");
-//document.write("<B><LABEL id=lbl08 onclick=$('number').value='H';>H</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:510px; POSITION:absolute;TOP:125px'>");
-//document.write("<B><LABEL id=lbl09 onclick=$('number').value='I';>I</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:535px; POSITION:absolute;TOP:155px'>");
-//document.write("<B><LABEL id=lbl10 onclick=$('number').value='J';>J</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:545px; POSITION:absolute;TOP:190px'>");
-//document.write("<B><LABEL id=lbl11 onclick=$('number').value='K';>K</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:470px; POSITION:absolute;TOP:170px'>");
-//document.write("<B><LABEL id=lbl12 onclick=$('number').value='L';>L</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:465px; POSITION:absolute;TOP:200px'>");
-//document.write("<B><LABEL id=lbl13 onclick=$('number').value='M';>M</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:455px; POSITION:absolute;TOP:220px'>");
-//document.write("<B><LABEL id=lbl14 onclick=$('number').value='N';>N</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:430px; POSITION:absolute;TOP:250px'>");
-//document.write("<B><LABEL id=lbl15 onclick=$('number').value='O';>O</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:455px; POSITION:absolute;TOP:295px'>");
-//document.write("<B><LABEL id=lbl16 onclick=$('number').value='P';>P</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:385px; POSITION:absolute;TOP:145px'>");
-//document.write("<B><LABEL id=lbl17 onclick=$('number').value='Q';>Q</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:420px; POSITION:absolute;TOP:145px'>");
-//document.write("<B><LABEL id=lbl18 onclick=$('number').value='R';>R</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:445px; POSITION:absolute;TOP:165px'>");
-//document.write("<B><LABEL id=lbl19 onclick=$('number').value='S';>S</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:410px; POSITION:absolute;TOP:180px'>");
-//document.write("<B><LABEL id=lbl20 onclick=$('number').value='T';>T</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:390px; POSITION:absolute;TOP:205px'>");
-//document.write("<B><LABEL id=lbl21 onclick=$('number').value='U';>U</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:390px; POSITION:absolute;TOP:245px'>");
-//document.write("<B><LABEL id=lbl22 onclick=$('number').value='V';>V</LABEL></B> </DIV>");
-
-//document.write("<DIV style='LEFT:345px; POSITION:absolute;TOP:95px'>");
-//document.write("<B><LABEL id=lbl23 onclick=$('number').value='W';>W</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:395px; POSITION:absolute;TOP:105px'>");
-//document.write("<B><LABEL id=lbl24 onclick=$('number').value='X';>X</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:355px; POSITION:absolute;TOP:145px'>");
-//document.write("<B><LABEL id=lbl25 onclick=$('number').value='Y';>Y</LABEL></B> </DIV>");
-//document.write("<DIV style='LEFT:360px; POSITION:absolute;TOP:240px'>");
-//document.write("<B><LABEL id=lbl26 onclick=$('number').value='Z';>Z</LABEL></B> </DIV>");
-
-document.write("<DIV style='LEFT:290px; POSITION:absolute;TOP:75px'>");
-document.write("<B><LABEL id=lbl27 onclick=$('number').value='AA';>AA</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:300px; POSITION:absolute;TOP:125px'>");
-document.write("<B><LABEL id=lbl28 onclick=$('number').value='BB';>BB</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:310px; POSITION:absolute;TOP:175px'>");
-document.write("<B><LABEL id=lbl29 onclick=$('number').value='CC';>CC</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:215px'>");
-document.write("<B><LABEL id=lbl30 onclick=$('number').value='DD';>DD</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:315px; POSITION:absolute;TOP:265px'>");
-document.write("<B><LABEL id=lbl31 onclick=$('number').value='EE';>EE</LABEL></B> </DIV>");
-
-document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:50px'>");
-document.write("<B><LABEL id=lbl32 onclick=$('number').value='FF';>FF</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:95px'>");
-document.write("<B><LABEL id=lbl33 onclick=$('number').value='GG';>GG</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:130px'>");
-document.write("<B><LABEL id=lbl34 onclick=$('number').value='HH';>HH</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:265px; POSITION:absolute;TOP:175px'>");
-document.write("<B><LABEL id=lbl35 onclick=$('number').value='II';>II</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:275px; POSITION:absolute;TOP:210px'>");
-document.write("<B><LABEL id=lbl36 onclick=$('number').value='JJ';>JJ</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:255px'>");
-document.write("<B><LABEL id=lbl37 onclick=$('number').value='KK';>KK</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:50px'>");
+//document.write("<B><LABEL id=lbl32 onclick=$('number').value='FF';>FF</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:95px'>");
+//document.write("<B><LABEL id=lbl33 onclick=$('number').value='GG';>GG</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:130px'>");
+//document.write("<B><LABEL id=lbl34 onclick=$('number').value='HH';>HH</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:265px; POSITION:absolute;TOP:175px'>");
+//document.write("<B><LABEL id=lbl35 onclick=$('number').value='II';>II</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:275px; POSITION:absolute;TOP:210px'>");
+//document.write("<B><LABEL id=lbl36 onclick=$('number').value='JJ';>JJ</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:250px; POSITION:absolute;TOP:255px'>");
+//document.write("<B><LABEL id=lbl37 onclick=$('number').value='KK';>KK</LABEL></B> </DIV>");
 
 
-document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:45px'>");
-document.write("<B><LABEL id=lbl38 onclick=$('number').value='LL';>LL</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:155px; POSITION:absolute;TOP:105px'>");
-document.write("<B><LABEL id=lbl39 onclick=$('number').value='MM';>MM</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:175px; POSITION:absolute;TOP:155px'>");
-document.write("<B><LABEL id=lbl40 onclick=$('number').value='NN';>NN</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:225px'>");
-document.write("<B><LABEL id=lbl41 onclick=$('number').value='OO';>OO</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:45px'>");
+//document.write("<B><LABEL id=lbl38 onclick=$('number').value='LL';>LL</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:155px; POSITION:absolute;TOP:105px'>");
+//document.write("<B><LABEL id=lbl39 onclick=$('number').value='MM';>MM</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:175px; POSITION:absolute;TOP:155px'>");
+//document.write("<B><LABEL id=lbl40 onclick=$('number').value='NN';>NN</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:160px; POSITION:absolute;TOP:225px'>");
+//document.write("<B><LABEL id=lbl41 onclick=$('number').value='OO';>OO</LABEL></B> </DIV>");
 
-document.write("<DIV style='LEFT:100px; POSITION:absolute;TOP:90px'>");
-document.write("<B><LABEL id=lbl42 onclick=$('number').value='PP';>PP</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:120px; POSITION:absolute;TOP:150px'>");
-document.write("<B><LABEL id=lbl43 onclick=$('number').value='QQ';>QQ</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:110px; POSITION:absolute;TOP:215px'>");
-document.write("<B><LABEL id=lbl44 onclick=$('number').value='RR';>RR</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:100px; POSITION:absolute;TOP:90px'>");
+//document.write("<B><LABEL id=lbl42 onclick=$('number').value='PP';>PP</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:120px; POSITION:absolute;TOP:150px'>");
+//document.write("<B><LABEL id=lbl43 onclick=$('number').value='QQ';>QQ</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:110px; POSITION:absolute;TOP:215px'>");
+//document.write("<B><LABEL id=lbl44 onclick=$('number').value='RR';>RR</LABEL></B> </DIV>");
 
-document.write("<DIV style='LEFT:55px; POSITION:absolute;TOP:30px'>");
-document.write("<B><LABEL id=lbl45 onclick=$('number').value='SS';>SS</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:45px; POSITION:absolute;TOP:75px'>");
-document.write("<B><LABEL id=lbl46 onclick=$('number').value='TT';>TT</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:35px; POSITION:absolute;TOP:170px'>");
-document.write("<B><LABEL id=lbl47 onclick=$('number').value='UU';>UU</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:70px; POSITION:absolute;TOP:135px'>");
-document.write("<B><LABEL id=lbl48 onclick=$('number').value='VV';>VV</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:230px; POSITION:absolute;TOP:305px'>");
-document.write("<B><LABEL id=lbl49 onclick=$('number').value='WW';>WW</LABEL></B> </DIV>");
-document.write("<DIV style='LEFT:280px; POSITION:absolute;TOP:305px'>");
-document.write("<B><LABEL id=lbl50 onclick=$('number').value='XX';>XX</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:55px; POSITION:absolute;TOP:30px'>");
+//document.write("<B><LABEL id=lbl45 onclick=$('number').value='SS';>SS</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:45px; POSITION:absolute;TOP:75px'>");
+//document.write("<B><LABEL id=lbl46 onclick=$('number').value='TT';>TT</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:35px; POSITION:absolute;TOP:170px'>");
+//document.write("<B><LABEL id=lbl47 onclick=$('number').value='UU';>UU</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:70px; POSITION:absolute;TOP:135px'>");
+//document.write("<B><LABEL id=lbl48 onclick=$('number').value='VV';>VV</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:230px; POSITION:absolute;TOP:305px'>");
+//document.write("<B><LABEL id=lbl49 onclick=$('number').value='WW';>WW</LABEL></B> </DIV>");
+//document.write("<DIV style='LEFT:280px; POSITION:absolute;TOP:305px'>");
+//document.write("<B><LABEL id=lbl50 onclick=$('number').value='XX';>XX</LABEL></B> </DIV>");
 
 //alert ('before json');
 let right =0;
@@ -324,7 +234,7 @@ var writeS = "";
 //alert ('after json');
 
 //for (i=0; i<mx; i++)
-for (i=0; i<26; i++)
+for (i=0; i<22; i++)
 {
   x[i] = list[i].x + "px";
   y[i] = list[i].y + "px";
@@ -361,7 +271,7 @@ document.write("</oPTGROUP>");
 document.write("</select></div> ");
 
 //
-document.write("<DIV style='LEFT: 200px; POSITION: absolute; TOP: 450px'>");
+document.write("<DIV style='LEFT: 320px; POSITION: absolute; TOP: 450px'>");
 document.write("<SELECT id=state size=10 name=state onChange=checkMatch();> ");
 document.write("<OPTGROUP LABEL=Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>");
 
