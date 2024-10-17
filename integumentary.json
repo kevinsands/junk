@@ -4,21 +4,21 @@ data = '[' +
 ',{"lbl":"c", "name":"Sub-cutaneous layer", "x":"20", "y":"300", "lblnum":"lbl03" }' +
 ',{"lbl":"d", "name":"Hair Shaft", "x":"420", "y":"5", "lblnum":"lbl04" }' +
 ',{"lbl":"e", "name":"Sweat Gland Pore", "x":"420", "y":"55", "lblnum":"lbl05" }' +
-',{"lbl":"f", "name":"Sweat", "x":"400", "y":"75", "lblnum":"lbl06" }' +
+',{"lbl":"f", "name":"Sweat", "x":"390", "y":"75", "lblnum":"lbl06" }' +
 ',{"lbl":"g", "name":"Stratum Corneum", "x":"420", "y":"90", "lblnum":"lbl07" }' +
-',{"lbl":"h", "name":"Stratum Basale", "x":"400", "y":"110", "lblnum":"lbl08" }' +
+',{"lbl":"h", "name":"Stratum Basale", "x":"390", "y":"110", "lblnum":"lbl08" }' +
 ',{"lbl":"i", "name":"Dermal Papilla", "x":"440", "y":"125", "lblnum":"lbl09" }' +
-',{"lbl":"j", "name":"Basement Membrane", "x":"400", "y":"145", "lblnum":"lbl10" }' +
+',{"lbl":"j", "name":"Basement Membrane", "x":"390", "y":"145", "lblnum":"lbl10" }' +
 ',{"lbl":"k", "name":"Capillary", "x":"420", "y":"170", "lblnum":"lbl11" }' +
-',{"lbl":"l", "name":"Tactile Corpuscle", "x":"400", "y":"190", "lblnum":"lbl12" }' +
+',{"lbl":"l", "name":"Tactile Corpuscle", "x":"390", "y":"190", "lblnum":"lbl12" }' +
 ',{"lbl":"m", "name":"Sweat Gland Duct", "x":"420", "y":"210", "lblnum":"lbl13" }' +
-',{"lbl":"n", "name":"Sebaceous Gland", "x":"400", "y":"230", "lblnum":"lbl14" }' +
+',{"lbl":"n", "name":"Sebaceous Gland", "x":"390", "y":"230", "lblnum":"lbl14" }' +
 ',{"lbl":"o", "name":"Arrector Pili Muscle", "x":"430", "y":"245", "lblnum":"lbl15" }' +
 ',{"lbl":"p", "name":"Sweat Gland", "x":"410", "y":"255", "lblnum":"lbl16" }' +
-',{"lbl":"q", "name":"Lamellated Corpuscle", "x":"400", "y":"275", "lblnum":"lbl17" }' +
+',{"lbl":"q", "name":"Lamellated Corpuscle", "x":"390", "y":"275", "lblnum":"lbl17" }' +
 ',{"lbl":"r", "name":"Hair Folicle", "x":"420", "y":"305", "lblnum":"lbl18" }' +
-',{"lbl":"s", "name":"Adipose Tissue", "x":"400", "y":"325", "lblnum":"lbl19" }' +
+',{"lbl":"s", "name":"Adipose Tissue", "x":"390", "y":"325", "lblnum":"lbl19" }' +
 ',{"lbl":"t", "name":"Nerve Cell Process", "x":"420", "y":"345", "lblnum":"lbl20" }' +
-',{"lbl":"u", "name":"Blood Vessels", "x":"400", "y":"370", "lblnum":"lbl21" }' +
+',{"lbl":"u", "name":"Blood Vessels", "x":"390", "y":"370", "lblnum":"lbl21" }' +
 ',{"lbl":"v", "name":"Muscle Layer", "x":"420", "y":"395", "lblnum":"lbl22" }' +
 ']';
